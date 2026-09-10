@@ -359,9 +359,19 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 /* 05 arquitetura */
 .s5 .wrap{display:grid;grid-template-columns:1fr 640px;gap:42px;align-items:center}
 .s5 .terr{display:flex;flex-direction:column;gap:14px}
-.s5 .tv{position:relative;height:298px;border-radius:20px;overflow:hidden;border:1.5px solid var(--line)}
-.s5 .tv img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s var(--ease)}
+.s5 .tvs{display:grid;grid-template-columns:1fr 208px;gap:13px;align-items:start}
+.s5 .tv{display:block;position:relative;height:260px;border-radius:20px;overflow:hidden;
+  border:1.5px solid var(--line);background:#fff;transition:.35s var(--ease)}
+.s5 .tv img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .5s var(--ease)}
 .s5 .tv img.on{opacity:1}
+.s5 .tv:hover{border-color:var(--red);transform:translateY(-3px);box-shadow:0 14px 34px rgba(225,37,27,.14)}
+.s5 .tv .cap{position:absolute;left:9px;bottom:9px;z-index:2;font-size:9px;font-weight:900;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink);background:rgba(255,255,255,.93);border-radius:100px;padding:4px 10px;
+  box-shadow:0 2px 8px rgba(35,31,32,.1)}
+.s5 .tv .zi{position:absolute;right:9px;top:9px;z-index:2;width:26px;height:26px;border-radius:50%;
+  background:rgba(255,255,255,.94);display:grid;place-items:center;opacity:0;transition:.3s;box-shadow:0 2px 8px rgba(35,31,32,.14)}
+.s5 .tv:hover .zi{opacity:1}
+.s5 .tv .zi svg{width:12px;height:12px;stroke:var(--red);fill:none;stroke-width:2.6;stroke-linecap:round}
 .s5 .tinfo{min-height:96px}
 .s5 .tinfo h3{margin-bottom:8px}
 /* 06 frentes */
@@ -670,7 +680,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
             <div class="lstep" data-a style="--d:6"><svg><use href="#i-sparkle"/></svg><b>Benefício</b><span>sabor, praticidade, indulgência, qualidade</span></div>
             <div class="lstep" data-a style="--d:7"><svg><use href="#i-tag"/></svg><b>Produto + preço</b><span>a decisão final</span></div>
           </div>
-          <p class="note" data-a style="--d:8;margin-top:20px;font-size:13px">A mesma estrutura serve para comunicação emocional, institucional ou promocional — muda o tom, não a hierarquia.</p>
+          <p class="note" data-a style="--d:8;margin-top:20px;font-size:13px">A mesma estrutura serve para comunicação emocional, institucional ou promocional — muda o tom, não a hierarquia. Clique nos KVs para ver em tela cheia.</p>
         </div>
         <div class="terr">
           <div class="seg lite" id="terrSeg" data-a style="--d:3">
@@ -678,10 +688,21 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
             <button data-t="1"><svg><use href="#i-wheat"/></svg>KV Adulto</button>
             <button data-t="2"><svg><use href="#i-cube"/></svg>PDV permanente</button>
           </div>
-          <div class="tv" data-a style="--d:4">
-            <img class="on" src="assets/kv-infantil.webp" alt="Território visual infantil e familiar">
-            <img src="assets/kv-adulto.webp" alt="Território visual adulto e institucional">
-            <img src="assets/grade-materiais.webp" alt="Grade de materiais de PDV Panco">
+          <div class="tvs" data-a style="--d:4">
+            <button class="tv" id="tvMain">
+              <img class="on" src="assets/kv-infantil.webp" alt="KV infantil e familiar, formato horizontal">
+              <img src="assets/kv-adulto.webp" alt="KV adulto e institucional, formato horizontal">
+              <img src="assets/grade-materiais.webp" alt="Grade de materiais de PDV Panco">
+              <span class="cap" id="tvMainCap">Horizontal</span>
+              <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
+            </button>
+            <button class="tv" id="tvSide">
+              <img class="on" src="assets/kv-infantil-vertical.webp" alt="KV infantil e familiar, formato vertical">
+              <img src="assets/kv-adulto-vertical.webp" alt="KV adulto e institucional, formato vertical">
+              <img src="assets/planograma.webp" alt="Matriz de aplicação por peça e por linha">
+              <span class="cap" id="tvSideCap">Vertical</span>
+              <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
+            </button>
           </div>
           <div class="tinfo" data-a style="--d:5" id="terrInfo"></div>
         </div>
@@ -996,15 +1017,27 @@ function bars(sec){
 
 /* ---------------- Tela 05 · territórios visuais ---------------- */
 var TERR=[
-  {h:"KV Infantil / Familiar",p:"Mais lúdico: bolinhas Panco, cores proprietárias e o Panquinho em 3D. Para rosquinhas, bolinhos e momentos de lanche."},
-  {h:"KV Adulto / Institucional",p:"Mais quente: madeira, trigo, mesa e textura de pão. Menos curva, menos infantilização. Para pães, qualidade e tradição."},
-  {h:"PDV permanente",p:"Materialidade, operação e escala. A comunicação entra como skin intercambiável, sem comprometer a estrutura da peça."}
+  {h:"KV Infantil / Familiar",p:"Mais lúdico: bolinhas Panco, cores proprietárias e o Panquinho em 3D. Para rosquinhas, bolinhos e momentos de lanche.",
+   a:["Pequenos sabores, grandes momentos · horizontal","assets/kv-infantil.webp"],
+   b:["Pequenos sabores, grandes momentos · vertical","assets/kv-infantil-vertical.webp"]},
+  {h:"KV Adulto / Institucional",p:"Mais quente: madeira, trigo, mesa e textura de pão. Menos curva, menos infantilização. Para pães, qualidade e tradição.",
+   a:["Amor, carinho e dedicação · horizontal","assets/kv-adulto.webp"],
+   b:["Amor, carinho e dedicação · vertical","assets/kv-adulto-vertical.webp"]},
+  {h:"PDV permanente",p:"Materialidade, operação e escala. Os dois KVs entram como skin intercambiável: o horizontal em testeira, régua, faixa e móbile; o vertical em display, cartaz, cubo e pallet.",
+   a:["Grade de materiais por KV","assets/grade-materiais.webp"],
+   b:["Matriz de aplicação por peça","assets/planograma.webp"]}
 ];
 function terr(k){
   var d=TERR[k];
   $("#terrInfo").innerHTML="<h3>"+d.h+"</h3><p>"+d.p+"</p>";
   $$("#terrSeg button").forEach(function(b,n){b.classList.toggle("sel",n===k)});
-  $$(".s5 .tv img").forEach(function(im,n){im.classList.toggle("on",n===k)});
+  $$(".s5 .tv img").forEach(function(im){im.classList.remove("on")});
+  $$("#tvMain img")[k].classList.add("on");
+  $$("#tvSide img")[k].classList.add("on");
+  $("#tvMainCap").textContent=d.a[0].split("·").pop().trim();
+  $("#tvSideCap").textContent=d.b[0].split("·").pop().trim();
+  $("#tvMain").setAttribute("data-img",d.a[1]);$("#tvMain").setAttribute("data-cap",d.a[0]);
+  $("#tvSide").setAttribute("data-img",d.b[1]);$("#tvSide").setAttribute("data-cap",d.b[0]);
 }
 $("#terrSeg").addEventListener("click",function(e){
   var b=e.target.closest("button[data-t]");if(b)terr(+b.dataset.t);

@@ -18,7 +18,7 @@ de MPDV, com piloto, rollout por ondas e cenários de dimensionamento.
 | 02 | Três frentes, uma mesma pergunta | o desafio |
 | 03 | A tese: arquitetura de PDV | o insight (leitura em 10 m / 3–5 m / 0–1 m) |
 | 04 | Por que agora | dados de mercado (ABIMAPI, ABRAS) |
-| 05 | A arquitetura de leitura | o sistema + territórios visuais |
+| 05 | A arquitetura de leitura | o sistema + os 4 key visuals (horizontal e vertical de cada território) |
 | 06 | As 3 frentes na prática | abas interativas com renders |
 | 07 | Menu modular de MPDV | 14 peças em 3 níveis de ambição |
 | 08 | O piloto como laboratório | cronograma (Trade Visit já concluído), desenho e KPIs |
@@ -41,6 +41,10 @@ Pantone 116 `#FFCD00`. A fonte oficial **Neris** não tem versão web — está 
 como substituta; trocar se o cliente fornecer os arquivos da Neris.
 
 ## Renders
+Os 4 key visuals ficam na tela 05: `kv-infantil.webp` / `kv-adulto.webp` (horizontais) e
+`kv-infantil-vertical.webp` / `kv-adulto-vertical.webp` (verticais) — cada aba mostra o par do
+território e abre em tela cheia no clique.
+
 Os renders em `assets/` vêm do estudo `PANCO_Estrategia_3_Frentes_MPDV_75LAB.pptx` (75 LAB),
 otimizados em WebP. Os fundos das três vistas da ilha foram recortados para compor sobre as
 áreas vermelhas. Para trocar qualquer peça, basta substituir o arquivo mantendo o nome.
