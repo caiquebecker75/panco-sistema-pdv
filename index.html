@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Panco · Sistema de presença no PDV</title>
-<meta name="description" content="Proposta estratégica 75 LAB × Panco. Sistema de presença no PDV para Sobremesas, Tortillas e Ilha Cash &amp; Carry, com menu modular de MPDV, piloto e cenários de investimento.">
+<meta name="description" content="Proposta estratégica 75 LAB × Panco. Sistema de presença no PDV: categorização do ponto natural, Linha Sobremesas e Ilha Cash &amp; Carry, com menu modular de MPDV, piloto e cenários de dimensionamento.">
 <meta name="theme-color" content="#E1251B">
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -391,7 +391,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 .tv .ins.sel{background:var(--red);border-color:var(--red);color:#fff}
 .tv .ins.sel .n2{color:var(--yellow)}
 .tv .ins.sel svg{stroke:var(--yellow)}
-.tv .ph{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;height:428px}
+.tv .ph{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:12px;height:428px}
 .tv .ph .render{height:100%}
 /* 08 antes e depois */
 .ba .body{gap:20px}
@@ -610,9 +610,9 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     <div class="lft">
       <div class="eyebrow" data-a>Proposta estratégica · 75 LAB × Panco</div>
       <h1 data-a style="--d:1">A marca mais fácil de <em>encontrar</em> na loja.</h1>
-      <p class="lede" data-a style="--d:2">Um sistema de presença no PDV para três frentes: <b>Linha Sobremesas</b>, <b>Lançamento Tortillas</b> e <b>Ilha Cash &amp; Carry</b>.</p>
+      <p class="lede" data-a style="--d:2">Um sistema de presença no PDV para organizar as categorias no ponto natural, a <b>Linha Sobremesas</b> e a <b>Ilha Cash &amp; Carry</b>.</p>
       <div class="chips" data-a style="--d:3">
-        <span class="tag">3 frentes</span>
+        <span class="tag">2 frentes</span>
         <span class="tag b">1 menu modular de MPDV</span>
         <span class="tag y">1 piloto que vira case</span>
       </div>
@@ -627,7 +627,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
   <section class="slide s2" data-part="Parte 01 · O desafio" data-chrome="ink">
     <div class="hd">
       <div class="eyebrow" data-a>O ponto de partida</div>
-      <h2 data-a style="--d:1">Três frentes. <em>A mesma raiz.</em></h2>
+      <h2 data-a style="--d:1">Duas frentes. <em>A mesma raiz.</em></h2>
       <p class="lede" data-a style="--d:2;max-width:none">O briefing pede materiais para desafios diferentes, e todos nascem do mesmo ponto: portfólio amplo, sem sistema de leitura na loja.</p>
     </div>
     <div class="body">
@@ -639,11 +639,6 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
         </button>
         <button class="frow" data-a style="--d:4" data-go="8">
           <span class="fn">02</span>
-          <span class="ft"><h3>Lançamento Tortillas</h3><p>Categoria nova e confidencial: precisa de ruptura visual, educação de uso e permissão de compra.</p>
-            <span class="fq"><svg><use href="#i-help"/></svg><b>Como dar impacto a uma categoria que o shopper ainda não procura?</b></span></span>
-        </button>
-        <button class="frow" data-a style="--d:5" data-go="8">
-          <span class="fn">03</span>
           <span class="ft"><h3>Ilha Cash &amp; Carry</h3><p>Grande exposição de atacarejo: escala e operação, sem abrir mão de design e marca.</p>
             <span class="fq"><svg><use href="#i-help"/></svg><b>Como fazer volume parecer marca, e não apenas estoque?</b></span></span>
         </button>
@@ -671,7 +666,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
         </ul>
         <div data-a style="--d:4;display:flex;gap:12px;margin-top:6px">
           <button class="btn wht" data-go="3">Por que agora <svg><use href="#i-arrow"/></svg></button>
-          <button class="btn ghow" data-go="8">Ver as 3 frentes</button>
+          <button class="btn ghow" data-go="8">Ver as frentes</button>
         </div>
       </div>
       <div class="dist" data-a style="--d:2">
@@ -708,7 +703,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
           </div>
           <div class="rd">
             <svg><use href="#i-sparkle"/></svg>
-            <p>Biscoitos dão escala e frequência. Pães constroem rotina e marca. Sobremesas geram valor. Tortillas entram como plataforma de novidade.</p>
+            <p>Biscoitos dão escala e frequência. Pães constroem rotina e marca. Bolos e sobremesas puxam valor agregado e indulgência.</p>
           </div>
         </div>
       </div>
@@ -728,7 +723,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
           <div class="ladder">
             <div class="lstep" data-a style="--d:2"><svg><use href="#i-heart"/></svg><b>Marca</b><span>Panco reconhecida de longe</span></div>
             <div class="lstep" data-a style="--d:3"><svg><use href="#i-clock"/></svg><b>Ocasião</b><span>café, lanche, sobremesa, compartilhar</span></div>
-            <div class="lstep" data-a style="--d:4"><svg><use href="#i-layers"/></svg><b>Categoria</b><span>pães, bolos, biscoitos, tortillas</span></div>
+            <div class="lstep" data-a style="--d:4"><svg><use href="#i-layers"/></svg><b>Categoria</b><span>pães, bolos, biscoitos, salgadinhos</span></div>
             <div class="lstep" data-a style="--d:5"><svg><use href="#i-grid"/></svg><b>Linha</b><span>tradicional, integral, artesanal, premium, novo</span></div>
             <div class="lstep" data-a style="--d:6"><svg><use href="#i-sparkle"/></svg><b>Benefício</b><span>sabor, praticidade, indulgência, qualidade</span></div>
             <div class="lstep" data-a style="--d:7"><svg><use href="#i-tag"/></svg><b>Produto + preço</b><span>a decisão final</span></div>
@@ -967,7 +962,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
         </button>
       </div>
       <div class="pieces" id="pieces" style="margin-top:22px"></div>
-      <p class="note" data-a style="--d:8;margin-top:20px">O mesmo repertório atende as 3 frentes, trocando só o KV. Cada peça é cotada por medida, material, acabamento e tiragem. A memória de cálculo vai em proposta comercial separada.</p>
+      <p class="note" data-a style="--d:8;margin-top:20px">O mesmo repertório atende as duas frentes e o ponto natural, trocando só o KV. Cada peça é cotada por medida, material, acabamento e tiragem. A memória de cálculo vai em proposta comercial separada.</p>
     </div>
   </section>
 
@@ -988,7 +983,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
       </div>
       <div class="nums" data-a style="--d:8">
         <div class="stat"><b>8–12</b><span>lojas teste + 4–6 lojas de controle</span></div>
-        <div class="stat"><b><i data-cu="3">0</i></b><span>frentes no mesmo piloto: sobremesas, tortillas e ilha</span></div>
+        <div class="stat"><b><i data-cu="2">0</i></b><span>frentes no mesmo piloto: sobremesas e ilha cash &amp; carry</span></div>
         <div class="stat"><b><i data-cu="3">0</i></b><span>canais: super regional, cash &amp; carry e loja compacta</span></div>
         <div class="stat"><b>4<small>+1</small></b><span>semanas de execução e ajuste</span></div>
       </div>
@@ -1086,7 +1081,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
           <p class="lede" data-a style="--d:3;color:rgba(255,255,255,.92);max-width:44ch">Do piloto em diante, a Panco negocia espaço com <b style="color:var(--yellow)">evidência</b>, não com opinião.</p>
           <div data-a style="--d:4;display:flex;gap:11px;margin-top:26px;flex-wrap:wrap">
             <a class="btn wht" href="mailto:marketing@75lab.com.br?subject=Panco%20%C2%B7%20Desenho%20do%20piloto%20de%20PDV&amp;body=Vamos%20fechar%20o%20desenho%20do%20piloto%20a%20partir%20do%20Trade%20Visit%20j%C3%A1%20realizado.">Definir o desenho do piloto <svg><use href="#i-mail"/></svg></a>
-            <button class="btn ghow" data-go="8">Rever as 3 frentes</button>
+            <button class="btn ghow" data-go="8">Rever as frentes</button>
             <button class="btn ghow" id="btnPrint2">Baixar PDF <svg><use href="#i-down"/></svg></button>
           </div>
         </div>
@@ -1099,7 +1094,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
           <div class="as"><svg><use href="#i-check"/></svg><span>SKUs por frente, pesos e dimensões reais</span></div>
           <div class="as"><svg><use href="#i-check"/></svg><span>Redes e formatos de loja prioritários</span></div>
           <div class="as"><svg><use href="#i-check"/></svg><span>Baseline: sell-out, facings, giro e ruptura</span></div>
-          <div class="as"><svg><use href="#i-check"/></svg><span>Nível de confidencialidade das tortillas</span></div>
+          <div class="as"><svg><use href="#i-check"/></svg><span>Diretrizes de uso do Panquinho e dos claims</span></div>
         </div>
         <div class="sign" data-a style="--d:6">
           <img class="pl" src="assets/panco_logo.svg" alt="Panco">
@@ -1164,7 +1159,7 @@ function fit(){var s=Math.min(innerWidth/1600,innerHeight/900);if(!(s>0))s=1;
 addEventListener("resize",fit);fit();
 
 var slides=$$(".slide"),N=slides.length,i=0,busy=false;
-var TITLES=["A marca mais fácil de encontrar","Três frentes, uma pergunta","A tese: arquitetura de PDV",
+var TITLES=["A marca mais fácil de encontrar","Duas frentes, a mesma raiz","A tese: arquitetura de PDV",
   "Por que agora","Jornada do shopper","Trade Visit: cinco travas","Enxoval de categorização","Antes e depois","As frentes na prática","Menu modular de MPDV",
   "O piloto como laboratório","Dimensionamento e pacotes","Próximo passo"];
 
@@ -1243,21 +1238,22 @@ terr(0);
 
 /* ---------------- Tela 06 · Trade Visit ---------------- */
 var TRAVAS=[
- {t:"Categoria com falta de apelo visual",i:"i-eye",g:"a",
+ {t:"Categoria com falta de apelo visual",i:"i-eye",g:"a",q:3,
   c:"Gôndolas longas e uniformes: nada chama o shopper nem separa o que é Panco."},
- {t:"Mistura de produtos sem categorização na gôndola",i:"i-layers",g:"b",
-  c:"Pão, bolo, salgadinho e marcas de terceiros convivendo no mesmo bloco, sem hierarquia."},
- {t:"Baixa luminosidade",i:"i-bulb",g:"c",
-  c:"Armários refrigerados e nichos escuros apagam a embalagem e o apetite."},
- {t:"Falta de ambientação e espaço da marca",i:"i-store",g:"d",
+ {t:"Mistura de produtos sem categorização na gôndola",i:"i-layers",g:"b",q:2,
+  c:"Pão, bolo, rosca e marcas de terceiros convivendo no mesmo bloco, sem hierarquia."},
+ {t:"Baixa luminosidade",i:"i-bulb",g:"c",q:2,
+  c:"Prateleiras aramadas e nichos na sombra apagam a embalagem e o apetite."},
+ {t:"Falta de ambientação e espaço da marca",i:"i-store",g:"d",q:2,
   c:"A padaria é genérica: cestos, madeira e móveis sem nenhuma assinatura Panco."},
- {t:"Materiais sem formato adequado para o ponto natural",i:"i-ruler",g:"e",
+ {t:"Materiais sem formato adequado para o ponto natural",i:"i-ruler",g:"e",q:3,
   c:"O material que existe não cabe na gôndola: fica no fim do corredor ou improvisado em aramado."}
 ];
 function trava(k){
   var d=TRAVAS[k];
   $$("#tvList .ins").forEach(function(b,n){b.classList.toggle("sel",n===k)});
-  $("#tvPh").innerHTML=[1,2,3].map(function(n){
+  var qty=[];for(var q=1;q<=(d.q||3);q++)qty.push(q);
+  $("#tvPh").innerHTML=qty.map(function(n){
     var f="assets/tv-"+d.g+n+".webp";
     return '<button class="render cover zoom" data-img="'+f+'" data-cap="'+d.t+'">'+
       '<img src="'+f+'" alt="Registro do Trade Visit: '+d.t+'">'+
@@ -1331,7 +1327,7 @@ level(1);
 /* ---------------- Tela 09 · cenários ---------------- */
 var SC=[
  {n:"Cenário 01 · Piloto enxuto",d:"Prova de conceito em uma rede, com o essencial do menu.",a:"6",b:"120–180",c:"4 semanas"},
- {n:"Cenário 02 · Piloto robusto",d:"Três frentes, três formatos de loja e leitura comparável com lojas controle.",a:"10–12",b:"280–420",c:"5 semanas"},
+ {n:"Cenário 02 · Piloto robusto",d:"Duas frentes, três formatos de loja e leitura comparável com lojas controle.",a:"10–12",b:"280–420",c:"5 semanas"},
  {n:"Cenário 03 · Rollout regional",d:"Escala por prioridade comercial, já com o playbook do piloto.",a:"50",b:"1.500–2.300",c:"6–10 semanas"},
  {n:"Cenário 04 · Escala nacional",d:"Programa Panco de presença no PDV, com reposição e atualização contínuas.",a:"150",b:"4.500–7.000",c:"por ondas"}
 ];

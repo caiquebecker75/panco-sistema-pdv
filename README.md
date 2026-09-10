@@ -1,8 +1,8 @@
 # Panco · Sistema de presença no PDV — 75 LAB
 
 Apresentação comercial em HTML (13 telas) da proposta estratégica da 75 LAB para a **Panco**:
-um sistema de presença no ponto de venda que integra as três frentes do briefing —
-**Linha Sobremesas**, **Lançamento Tortillas** e **Ilha Cash & Carry** — em um menu modular
+um sistema de presença no ponto de venda que integra a categorização do ponto natural,
+a **Linha Sobremesas** e a **Ilha Cash & Carry** em um menu modular
 de MPDV, com piloto, rollout por ondas e cenários de dimensionamento.
 
 Inclui o **enxoval de categorização do ponto natural**: as 10 peças (placa, móbile aéreo, tag,
@@ -19,7 +19,7 @@ identificada no Trade Visit.
 | # | Tela | Papel |
 |---|------|-------|
 | 01 | A marca mais fácil de encontrar | capa, com a marca Panco em destaque |
-| 02 | Três frentes, a mesma raiz | o desafio e as três perguntas do briefing |
+| 02 | Duas frentes, a mesma raiz | o desafio e as perguntas-chave de cada frente |
 | 03 | A tese: arquitetura de PDV | o insight (leitura em 10 m / 3–5 m / 0–1 m) |
 | 04 | Por que agora | dados de mercado (ABIMAPI, ABRAS) |
 | 05 | Jornada do shopper | a escada de leitura + os 4 key visuals |
@@ -35,7 +35,7 @@ identificada no Trade Visit.
 ## Como usar
 - Abra `index.html` no navegador (ou sirva a pasta com qualquer servidor estático).
 - **Navegação:** setas ← →, espaço, PageUp/PageDown, `Home`/`End`, `M` abre o índice, swipe no mobile.
-- **Interações:** abas das 3 frentes (tela 06), níveis do menu de MPDV (tela 07),
+- **Interações:** travas do Trade Visit (tela 06), antes/depois (tela 08), níveis do menu de MPDV (tela 10),
   cenários de dimensionamento (tela 09), territórios visuais (tela 05) e lightbox em todos os renders.
 - **Exportar PDF:** `Cmd+P` — há estilo de impressão, uma tela por página (1600×900).
 - Palco fixo de 1600×900 escalado para qualquer tela.
