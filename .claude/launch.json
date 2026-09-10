@@ -1,0 +1,8 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "panco-pdv-sistema", "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m","http.server","8942","--directory","/Users/caiquebecker/panco-sistema-pdv"],
+      "port": 8942 }
+  ]
+}
