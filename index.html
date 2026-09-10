@@ -378,7 +378,12 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 .s5 .tv .zi svg{width:12px;height:12px;stroke:var(--red);fill:none;stroke-width:2.6;stroke-linecap:round}
 .s5 .tinfo{min-height:96px}
 .s5 .tinfo h3{margin-bottom:8px}
-/* 06 frentes */
+/* 06 enxoval de categorização */
+.sc .body{gap:22px}
+.sc .cats{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}
+.sc .cats .render{height:200px}
+.sc .cats .render .cap{left:9px;bottom:9px;font-size:9px;padding:4px 9px}
+/* 07 frentes */
 .s6 .wrap{display:grid;grid-template-columns:470px 1fr;gap:36px;align-items:stretch;flex:1;min-height:0}
 .s6 .hd{gap:16px}
 .s6 .body{margin-top:22px}
@@ -569,7 +574,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
       </div>
       <div data-a style="--d:4;display:flex;gap:12px;margin-top:6px">
         <button class="btn pri" data-go="1">Começar a apresentação <svg><use href="#i-arrow"/></svg></button>
-        <button class="btn gho" data-go="8">Ver o dimensionamento</button>
+        <button class="btn gho" data-go="9">Ver o dimensionamento</button>
       </div>
     </div>
   </section>
@@ -583,17 +588,17 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     </div>
     <div class="body">
       <div class="f3">
-        <button class="frow" data-a style="--d:3" data-go="5" data-tab="0">
+        <button class="frow" data-a style="--d:3" data-go="6" data-tab="0">
           <span class="fn">01</span>
           <span class="ft"><h3>Linha Sobremesas</h3><p>Wafer, recheados e bolinhos: indulgência que pede missão de compra, blocagem e impulso.</p></span>
           <span class="im"><img src="assets/display-balcao-infantil.webp" alt="Display de balcão da linha Sobremesas"></span>
         </button>
-        <button class="frow" data-a style="--d:4" data-go="5" data-tab="1">
+        <button class="frow" data-a style="--d:4" data-go="6" data-tab="1">
           <span class="fn">02</span>
           <span class="ft"><h3>Lançamento Tortillas</h3><p>Categoria nova e confidencial: precisa de ruptura visual, educação de uso e permissão de compra.</p></span>
           <span class="im"><img src="assets/display-balcao-adulto.webp" alt="Plataforma de lançamento em display de balcão"></span>
         </button>
-        <button class="frow" data-a style="--d:5" data-go="5" data-tab="2">
+        <button class="frow" data-a style="--d:5" data-go="6" data-tab="2">
           <span class="fn">03</span>
           <span class="ft"><h3>Ilha Cash &amp; Carry</h3><p>Grande exposição de atacarejo: escala e operação, sem abrir mão de design e marca.</p></span>
           <span class="im"><img src="assets/ilha-frontal.webp" alt="Ilha Panco para atacarejo"></span>
@@ -622,7 +627,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
         </ul>
         <div data-a style="--d:4;display:flex;gap:12px;margin-top:6px">
           <button class="btn wht" data-go="3">Por que agora <svg><use href="#i-arrow"/></svg></button>
-          <button class="btn ghow" data-go="5">Ver as 3 frentes</button>
+          <button class="btn ghow" data-go="6">Ver as 3 frentes</button>
         </div>
       </div>
       <div class="dist" data-a style="--d:2">
@@ -711,7 +716,71 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     </div>
   </section>
 
-  <!-- ============ 06 · AS 3 FRENTES ============ -->
+  <!-- ============ 06 · ENXOVAL DE CATEGORIZAÇÃO ============ -->
+  <section class="slide sc warm" data-part="Parte 02 · Ponto natural" data-chrome="ink">
+    <div class="hd">
+      <div class="eyebrow" data-a>O que falta hoje no ponto natural</div>
+      <h2 data-a style="--d:1">Oito categorias. <em>Um enxoval para cada uma.</em></h2>
+      <p class="lede" data-a style="--d:2;max-width:none">Hoje nenhuma peça separa as categorias na gôndola. Este enxoval já está desenhado e pronto para produzir.</p>
+    </div>
+    <div class="body">
+      <div class="cats">
+        <button class="render zoom" data-a style="--d:3.0" data-img="assets/cat-paes-placa.webp" data-cap="Pães · placa">
+          <img src="assets/cat-paes-placa.webp" alt="Peça de categoria Panco: Pães · placa">
+          <span class="cap">Pães · placa</span>
+          <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
+        </button>
+        <button class="render zoom" data-a style="--d:3.5" data-img="assets/cat-paes-mobile.webp" data-cap="Pães · móbile aéreo">
+          <img src="assets/cat-paes-mobile.webp" alt="Peça de categoria Panco: Pães · móbile aéreo">
+          <span class="cap">Pães · móbile aéreo</span>
+          <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
+        </button>
+        <button class="render zoom" data-a style="--d:4.0" data-img="assets/cat-bolos-tag.webp" data-cap="Bolos · tag de gôndola">
+          <img src="assets/cat-bolos-tag.webp" alt="Peça de categoria Panco: Bolos · tag de gôndola">
+          <span class="cap">Bolos · tag de gôndola</span>
+          <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
+        </button>
+        <button class="render zoom" data-a style="--d:4.5" data-img="assets/cat-bolos-testeira.webp" data-cap="Bolos · testeira">
+          <img src="assets/cat-bolos-testeira.webp" alt="Peça de categoria Panco: Bolos · testeira">
+          <span class="cap">Bolos · testeira</span>
+          <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
+        </button>
+        <button class="render zoom" data-a style="--d:5.0" data-img="assets/cat-bolinhos.webp" data-cap="Bolinhos · testeira">
+          <img src="assets/cat-bolinhos.webp" alt="Peça de categoria Panco: Bolinhos · testeira">
+          <span class="cap">Bolinhos · testeira</span>
+          <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
+        </button>
+        <button class="render zoom" data-a style="--d:5.5" data-img="assets/cat-biscoitos.webp" data-cap="Biscoitos · testeira">
+          <img src="assets/cat-biscoitos.webp" alt="Peça de categoria Panco: Biscoitos · testeira">
+          <span class="cap">Biscoitos · testeira</span>
+          <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
+        </button>
+        <button class="render zoom" data-a style="--d:6.0" data-img="assets/cat-massas.webp" data-cap="Massas instantâneas · móbile">
+          <img src="assets/cat-massas.webp" alt="Peça de categoria Panco: Massas instantâneas · móbile">
+          <span class="cap">Massas instantâneas · móbile</span>
+          <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
+        </button>
+        <button class="render zoom" data-a style="--d:6.5" data-img="assets/cat-salgadinhos.webp" data-cap="Salgadinhos · cubo">
+          <img src="assets/cat-salgadinhos.webp" alt="Peça de categoria Panco: Salgadinhos · cubo">
+          <span class="cap">Salgadinhos · cubo</span>
+          <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
+        </button>
+        <button class="render zoom" data-a style="--d:7.0" data-img="assets/cat-panettones.webp" data-cap="Panettones · display de chão">
+          <img src="assets/cat-panettones.webp" alt="Peça de categoria Panco: Panettones · display de chão">
+          <span class="cap">Panettones · display de chão</span>
+          <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
+        </button>
+        <button class="render zoom" data-a style="--d:7.5" data-img="assets/cat-farinaceos.webp" data-cap="Farináceos · placa">
+          <img src="assets/cat-farinaceos.webp" alt="Peça de categoria Panco: Farináceos · placa">
+          <span class="cap">Farináceos · placa</span>
+          <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
+        </button>
+      </div>
+      <p class="note" data-a style="--d:9">Seis formatos para caber em qualquer gôndola: placa, móbile aéreo, tag, testeira, cubo e display de chão. Clique em qualquer peça para ampliar.</p>
+    </div>
+  </section>
+
+  <!-- ============ 07 · AS 3 FRENTES ============ -->
   <section class="slide s6" data-part="Parte 02 · As 3 frentes" data-chrome="ink">
     <div class="hd">
       <div class="eyebrow" data-a>O plano integrado</div>
@@ -732,7 +801,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     </div>
   </section>
 
-  <!-- ============ 07 · MENU DE MPDV ============ -->
+  <!-- ============ 08 · MENU DE MPDV ============ -->
   <section class="slide s7 warm" data-part="Parte 02 · Menu de MPDV" data-chrome="ink">
     <div class="hd">
       <div class="eyebrow" data-a>O repertório</div>
@@ -764,7 +833,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     </div>
   </section>
 
-  <!-- ============ 08 · O PILOTO ============ -->
+  <!-- ============ 09 · O PILOTO ============ -->
   <section class="slide s8" data-part="Parte 03 · Piloto e rollout" data-chrome="ink">
     <div class="hd">
       <div class="eyebrow" data-a>Do diagnóstico ao piloto</div>
@@ -800,12 +869,12 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
       <div class="qband" data-a style="--d:11">
         <svg class="q" viewBox="0 0 24 24"><use href="#i-help"/></svg>
         <p>A pergunta do piloto não é “a peça ficou bonita?”. É “qual configuração vende mais, opera melhor e convence o varejo?”.</p>
-        <button class="btn wht" data-go="8">Ver o dimensionamento <svg><use href="#i-arrow"/></svg></button>
+        <button class="btn wht" data-go="9">Ver o dimensionamento <svg><use href="#i-arrow"/></svg></button>
       </div>
     </div>
   </section>
 
-  <!-- ============ 09 · INVESTIMENTO ============ -->
+  <!-- ============ 10 · DIMENSIONAMENTO ============ -->
   <section class="slide s9" data-part="Parte 04 · Dimensionamento" data-chrome="ink">
     <div class="hd">
       <div class="eyebrow" data-a>O dimensionamento</div>
@@ -858,7 +927,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     </div>
   </section>
 
-  <!-- ============ 10 · PRÓXIMO PASSO ============ -->
+  <!-- ============ 11 · PRÓXIMO PASSO ============ -->
   <section class="slide s10 dark" data-part="Fechamento" data-chrome="red">
     <div class="cv"><i></i><i></i><i></i></div>
     <div class="dots" style="right:56px;top:132px;grid-template-columns:repeat(3,1fr)">
@@ -872,14 +941,14 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
           <div class="steps" data-a style="--d:2">
             <div class="st done"><svg><use href="#i-check"/></svg>Trade Visit<i>feito</i></div>
             <span class="ar"><svg style="width:24px;height:24px;stroke:var(--yellow);fill:none;stroke-width:2.6;stroke-linecap:round" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>
-            <button class="st" data-go="7"><svg><use href="#i-store"/></svg>Piloto</button>
+            <button class="st" data-go="8"><svg><use href="#i-store"/></svg>Piloto</button>
             <span class="ar"><svg style="width:24px;height:24px;stroke:var(--yellow);fill:none;stroke-width:2.6;stroke-linecap:round" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>
-            <button class="st" data-go="8"><svg><use href="#i-route"/></svg>Rollout</button>
+            <button class="st" data-go="9"><svg><use href="#i-route"/></svg>Rollout</button>
           </div>
           <p class="lede" data-a style="--d:3;color:rgba(255,255,255,.92);max-width:44ch">Do piloto em diante, a Panco negocia espaço com <b style="color:var(--yellow)">evidência</b>, não com opinião.</p>
           <div data-a style="--d:4;display:flex;gap:11px;margin-top:26px;flex-wrap:wrap">
             <a class="btn wht" href="mailto:marketing@75lab.com.br?subject=Panco%20%C2%B7%20Desenho%20do%20piloto%20de%20PDV&amp;body=Vamos%20fechar%20o%20desenho%20do%20piloto%20a%20partir%20do%20Trade%20Visit%20j%C3%A1%20realizado.">Definir o desenho do piloto <svg><use href="#i-mail"/></svg></a>
-            <button class="btn ghow" data-go="5">Rever as 3 frentes</button>
+            <button class="btn ghow" data-go="6">Rever as 3 frentes</button>
             <button class="btn ghow" id="btnPrint2">Baixar PDF <svg><use href="#i-down"/></svg></button>
           </div>
         </div>
@@ -963,7 +1032,7 @@ addEventListener("resize",fit);fit();
 
 var slides=$$(".slide"),N=slides.length,i=0,busy=false;
 var TITLES=["A marca mais fácil de encontrar","Três frentes, uma pergunta","A tese: arquitetura de PDV",
-  "Por que agora","Jornada do shopper","As 3 frentes na prática","Menu modular de MPDV",
+  "Por que agora","Jornada do shopper","Enxoval de categorização","As 3 frentes na prática","Menu modular de MPDV",
   "O piloto como laboratório","Dimensionamento e pacotes","Próximo passo"];
 
 function setChrome(){

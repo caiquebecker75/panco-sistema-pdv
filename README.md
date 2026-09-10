@@ -1,9 +1,13 @@
 # Panco · Sistema de presença no PDV — 75 LAB
 
-Apresentação comercial em HTML (10 telas) da proposta estratégica da 75 LAB para a **Panco**:
+Apresentação comercial em HTML (11 telas) da proposta estratégica da 75 LAB para a **Panco**:
 um sistema de presença no ponto de venda que integra as três frentes do briefing —
 **Linha Sobremesas**, **Lançamento Tortillas** e **Ilha Cash & Carry** — em um menu modular
 de MPDV, com piloto, rollout por ondas e cenários de dimensionamento.
+
+Inclui o **enxoval de categorização do ponto natural**: as 10 peças (placa, móbile aéreo, tag,
+testeira, cubo e display de chão) que identificam as 8 categorias Panco na gôndola, lacuna
+identificada no Trade Visit.
 
 > **Sem valores.** O deck não exibe preço, orçamento ou faixa de investimento em nenhuma tela —
 > o investimento é apresentado em proposta comercial separada. O único dado em R$ é o tamanho de
@@ -19,11 +23,12 @@ de MPDV, com piloto, rollout por ondas e cenários de dimensionamento.
 | 03 | A tese: arquitetura de PDV | o insight (leitura em 10 m / 3–5 m / 0–1 m) |
 | 04 | Por que agora | dados de mercado (ABIMAPI, ABRAS) |
 | 05 | Jornada do shopper | a escada de leitura + os 4 key visuals (horizontal e vertical de cada território) |
-| 06 | As 3 frentes na prática | abas interativas com renders |
-| 07 | Menu modular de MPDV | 14 peças em 3 níveis de ambição |
-| 08 | O piloto como laboratório | cronograma (Trade Visit já concluído), desenho e KPIs |
-| 09 | Dimensionamento e pacotes | 4 cenários de lojas/peças/prazo + 3 pacotes de contratação |
-| 10 | Próximo passo | Trade Visit ✓ → Piloto → Rollout |
+| 06 | Enxoval de categorização | as 10 peças que separam as 8 categorias no ponto natural |
+| 07 | As 3 frentes na prática | abas interativas com renders |
+| 08 | Menu modular de MPDV | 14 peças em 3 níveis de ambição |
+| 09 | O piloto como laboratório | cronograma (Trade Visit já concluído), desenho e KPIs |
+| 10 | Dimensionamento e pacotes | 4 cenários de lojas/peças/prazo + 3 pacotes de contratação |
+| 11 | Próximo passo | Trade Visit ✓ → Piloto → Rollout |
 
 ## Como usar
 - Abra `index.html` no navegador (ou sirva a pasta com qualquer servidor estático).
