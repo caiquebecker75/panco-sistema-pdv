@@ -412,14 +412,15 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 .s8 .fstep.done i{color:rgba(255,255,255,.82)}
 .s8 .fstep.done svg{stroke:var(--yellow)}
 .s8 .fstep.done:hover{background:var(--red);border-color:var(--red);transform:none}
-.s8 .wrap{display:grid;grid-template-columns:1fr 500px;gap:36px;align-items:start;margin-top:24px}
-.s8 .quote{background:var(--red);color:#fff;border-radius:22px;padding:26px 28px;display:flex;flex-direction:column;gap:12px}
-.s8 .quote p{font-size:20px;font-weight:900;line-height:1.26;letter-spacing:-.022em}
-.s8 .quote svg{width:30px;height:30px;stroke:var(--yellow);fill:none;stroke-width:2;stroke-linecap:round}
-.s8 .kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.s8 .kpi{display:flex;gap:10px;align-items:center;background:var(--cream);border:1.5px solid #F1E4DA;border-radius:13px;padding:11px 13px}
-.s8 .kpi svg{width:18px;height:18px;flex:0 0 18px;stroke:var(--red);fill:none;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
-.s8 .kpi span{font-size:12.5px;font-weight:800;line-height:1.2}
+.s8 .body{gap:28px}
+.s8 .nums{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.s8 .nums>div+div{border-left:1.5px solid var(--line);padding-left:28px}
+.s8 .nums .stat b{font-size:60px}
+.s8 .nums .stat b small{font-size:.42em;color:var(--ink3)}
+.s8 .nums .stat span{max-width:26ch}
+.s8 .qband{background:var(--red);color:#fff;border-radius:22px;padding:24px 28px;display:flex;align-items:center;gap:24px}
+.s8 .qband svg.q{width:30px;height:30px;flex:0 0 30px;stroke:var(--yellow);fill:none;stroke-width:2;stroke-linecap:round}
+.s8 .qband p{flex:1;font-size:20px;font-weight:900;line-height:1.26;letter-spacing:-.022em}
 /* 09 investimento */
 .s9 .wrap{display:grid;grid-template-columns:1fr 560px;gap:40px;align-items:center}
 .s9 .scb{background:var(--red);border-radius:26px;padding:30px 34px;color:#fff;display:flex;flex-direction:column;gap:20px}
@@ -442,7 +443,12 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 .s10 .cv i:nth-child(1){background:var(--red5);bottom:-32%;height:74%}
 .s10 .cv i:nth-child(2){background:var(--red4);bottom:-40%;height:74%}
 .s10 .cv i:nth-child(3){background:var(--red);bottom:-48%;height:74%}
-.s10 .in{position:absolute;inset:104px var(--pad) 78px;z-index:3;display:flex;flex-direction:column}
+.s10 .in{position:absolute;inset:98px var(--pad) 66px;z-index:3;display:flex;flex-direction:column;gap:26px}
+.s10 .top{flex:1;min-height:0;display:grid;grid-template-columns:1fr 552px;gap:46px;align-items:center}
+.s10 .lft2{display:flex;flex-direction:column}
+.s10 .art{height:100%;display:grid;place-items:center}
+.s10 .art img{width:100%;max-height:400px;object-fit:contain;filter:drop-shadow(0 22px 44px rgba(0,0,0,.34))}
+.s10 .foot{display:flex;flex-direction:column;gap:18px}
 .s10 .steps{display:flex;align-items:center;gap:14px;margin:26px 0 30px}
 .s10 .st{display:flex;align-items:center;gap:13px;background:#fff;border:2px solid var(--ink);border-radius:100px;padding:13px 24px;
   font-size:17px;font-weight:1000;letter-spacing:-.02em;transition:.3s var(--ease)}
@@ -456,15 +462,14 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 .s10 .st.done:hover{background:#fff;border-color:var(--ink);color:var(--ink);transform:none}
 .s10 .st.done:hover svg{stroke:var(--red)}
 .s10 .ar{color:var(--red)}
-.s10 .ask{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:auto}
+.s10 .ask{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .s10 .as{background:rgba(255,255,255,.14);border:1.5px solid rgba(255,255,255,.3);border-radius:14px;padding:13px 15px;
   display:flex;gap:10px;align-items:flex-start}
 .s10 .as svg{width:17px;height:17px;flex:0 0 17px;margin-top:1px;stroke:var(--yellow);fill:none;stroke-width:2.4;stroke-linecap:round}
 .s10 .as span{font-size:12.5px;font-weight:700;line-height:1.32;color:#fff}
-.s10 .sign{display:flex;align-items:center;gap:16px;margin-top:20px}
+.s10 .sign{display:flex;align-items:center;gap:16px}
 .s10 .sign img.l75{height:18px;filter:invert(1) brightness(2)}
 .s10 .sign img.pl{height:44px}
-.s10 .piece{position:absolute;right:52px;top:248px;width:520px;z-index:2;filter:drop-shadow(0 22px 44px rgba(0,0,0,.34))}
 .s10 .sign span{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7)}
 </style>
 <style>
@@ -525,7 +530,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
       <img class="l75" src="assets/75lab-wordmark-black.png" alt="75 LAB">
     </div>
     <div class="spacer"></div>
-    <button class="chip" id="btnMenu">Índice · M</button>
+    <button class="chip" id="btnMenu">Índice</button>
     <button class="chip" id="btnPrint">Baixar PDF</button>
   </div>
 
@@ -787,40 +792,28 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
         <div class="fstep" data-a style="--d:6"><svg><use href="#i-chart"/></svg><b>Semana 10</b><span>Leitura</span><i>dados e aprendizados</i></div>
         <div class="fstep" data-a style="--d:7"><svg><use href="#i-route"/></svg><b>Semana 11+</b><span>Rollout</span><i>escala por ondas</i></div>
       </div>
-      <div class="wrap">
-        <div>
-          <div class="kicker" data-a style="--d:8;margin-bottom:10px">Desenho do piloto</div>
-          <div class="rows" data-a style="--d:8">
-            <div class="row"><span class="k">Lojas</span><span class="v">8–12 teste + 4–6 controle</span></div>
-            <div class="row"><span class="k">Canais</span><span class="v">supermercado regional · cash &amp; carry · loja compacta</span></div>
-            <div class="row"><span class="k">Frentes</span><span class="v">sobremesas, tortillas e ilha</span></div>
-            <div class="row"><span class="k">Duração</span><span class="v">4 semanas de execução + 1 de ajuste</span></div>
-            <div class="row"><span class="k">Saída</span><span class="v">case fotográfico + playbook + escala</span></div>
-          </div>
-          <div class="kicker" data-a style="--d:9;margin:20px 0 10px">Indicadores</div>
-          <div class="kpis" data-a style="--d:9">
-            <div class="kpi"><svg><use href="#i-chart"/></svg><span>Venda incremental vs. controle</span></div>
-            <div class="kpi"><svg><use href="#i-ruler"/></svg><span>Share de espaço e facings</span></div>
-            <div class="kpi"><svg><use href="#i-box"/></svg><span>Ruptura e reposição</span></div>
-            <div class="kpi"><svg><use href="#i-check"/></svg><span>Compliance de execução</span></div>
-            <div class="kpi"><svg><use href="#i-cycle"/></svg><span>Operação da loja</span></div>
-            <div class="kpi"><svg><use href="#i-users"/></svg><span>Leitura do shopper</span></div>
-          </div>
+      <div class="nums" data-a style="--d:8">
+        <div class="stat"><b>8–12</b><span>lojas teste + 4–6 lojas de controle</span></div>
+        <div class="stat"><b><i data-cu="3">0</i></b><span>frentes no mesmo piloto: sobremesas, tortillas e ilha</span></div>
+        <div class="stat"><b><i data-cu="3">0</i></b><span>canais: super regional, cash &amp; carry e loja compacta</span></div>
+        <div class="stat"><b>4<small>+1</small></b><span>semanas de execução e ajuste</span></div>
+      </div>
+      <div data-a style="--d:9">
+        <div class="kicker" style="margin-bottom:11px">O que o piloto mede</div>
+        <div class="chips">
+          <span class="tag">Venda incremental vs. controle</span>
+          <span class="tag b">Share de espaço e facings</span>
+          <span class="tag">Ruptura e reposição</span>
+          <span class="tag y">Compliance de execução</span>
+          <span class="tag">Operação da loja</span>
+          <span class="tag b">Leitura do shopper</span>
         </div>
-        <div style="display:flex;flex-direction:column;gap:16px">
-          <div class="quote" data-a style="--d:8">
-            <svg viewBox="0 0 24 24"><use href="#i-help"/></svg>
-            <p>A pergunta do piloto não é “a peça ficou bonita?”. É “qual configuração vende mais, opera melhor e convence o varejo?”.</p>
-          </div>
-          <div class="card soft" data-a style="--d:9;gap:12px">
-            <div style="display:flex;gap:13px;align-items:center">
-              <div class="icob"><svg class="ico"><use href="#i-sparkle"/></svg></div>
-              <h3>O piloto vira case</h3>
-            </div>
-            <p>Fotos padronizadas em D0, D7, D14, D21 e D28 transformam execução em evidência comercial — para negociar espaço, ajustar investimento e escalar com segurança.</p>
-          </div>
-          <button class="btn pri" data-go="8" data-a style="--d:10;align-self:flex-start">Ver o dimensionamento <svg><use href="#i-arrow"/></svg></button>
-        </div>
+      </div>
+      <p class="note" data-a style="--d:10">Saída: case fotográfico, playbook e recomendação de escala — com fotos padronizadas em D0, D7, D14, D21 e D28.</p>
+      <div class="qband" data-a style="--d:11">
+        <svg class="q" viewBox="0 0 24 24"><use href="#i-help"/></svg>
+        <p>A pergunta do piloto não é “a peça ficou bonita?”. É “qual configuração vende mais, opera melhor e convence o varejo?”.</p>
+        <button class="btn wht" data-go="8">Ver o dimensionamento <svg><use href="#i-arrow"/></svg></button>
       </div>
     </div>
   </section>
@@ -884,34 +877,42 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     <div class="dots" style="right:56px;top:132px;grid-template-columns:repeat(3,1fr)">
       <i class="dw"></i><i class="dy"></i><i class="dw"></i><i class="dy"></i><i class="dw"></i><i class="dw"></i>
     </div>
-    <img class="piece" src="assets/midia-aerea.webp" alt="Mídia aérea Panco no ponto de venda" data-a style="--d:3">
     <div class="in">
-      <div class="eyebrow" data-a>O próximo passo</div>
-      <h1 data-a style="--d:1;font-size:68px;margin-top:14px">Já conhecemos o campo. Agora é <em>piloto</em>.</h1>
-      <div class="steps" data-a style="--d:2">
-        <div class="st done"><svg><use href="#i-check"/></svg>Trade Visit<i>feito</i></div>
-        <span class="ar"><svg style="width:26px;height:26px;stroke:var(--yellow);fill:none;stroke-width:2.6;stroke-linecap:round" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>
-        <button class="st" data-go="7"><svg><use href="#i-store"/></svg>Piloto</button>
-        <span class="ar"><svg style="width:26px;height:26px;stroke:var(--yellow);fill:none;stroke-width:2.6;stroke-linecap:round" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>
-        <button class="st" data-go="8"><svg><use href="#i-route"/></svg>Rollout</button>
+      <div class="top">
+        <div class="lft2">
+          <div class="eyebrow" data-a>O próximo passo</div>
+          <h1 data-a style="--d:1;font-size:64px;margin-top:16px">Já conhecemos o campo.<br>Agora é <em>piloto</em>.</h1>
+          <div class="steps" data-a style="--d:2">
+            <div class="st done"><svg><use href="#i-check"/></svg>Trade Visit<i>feito</i></div>
+            <span class="ar"><svg style="width:24px;height:24px;stroke:var(--yellow);fill:none;stroke-width:2.6;stroke-linecap:round" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>
+            <button class="st" data-go="7"><svg><use href="#i-store"/></svg>Piloto</button>
+            <span class="ar"><svg style="width:24px;height:24px;stroke:var(--yellow);fill:none;stroke-width:2.6;stroke-linecap:round" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>
+            <button class="st" data-go="8"><svg><use href="#i-route"/></svg>Rollout</button>
+          </div>
+          <p class="lede" data-a style="--d:3;color:rgba(255,255,255,.92);max-width:44ch">Do piloto em diante, a Panco negocia espaço com <b style="color:var(--yellow)">evidência</b> — não com opinião.</p>
+          <div data-a style="--d:4;display:flex;gap:11px;margin-top:26px;flex-wrap:wrap">
+            <a class="btn wht" href="mailto:marketing@75lab.com.br?subject=Panco%20%C2%B7%20Desenho%20do%20piloto%20de%20PDV&amp;body=Vamos%20fechar%20o%20desenho%20do%20piloto%20a%20partir%20do%20Trade%20Visit%20j%C3%A1%20realizado.">Definir o desenho do piloto <svg><use href="#i-mail"/></svg></a>
+            <button class="btn ghow" data-go="5">Rever as 3 frentes</button>
+            <button class="btn ghow" id="btnPrint2">Baixar PDF <svg><use href="#i-down"/></svg></button>
+          </div>
+        </div>
+        <div class="art" data-a style="--d:3">
+          <img src="assets/midia-aerea.webp" alt="Mídia aérea Panco no ponto de venda">
+        </div>
       </div>
-      <p class="lede" data-a style="--d:3;color:rgba(255,255,255,.9);max-width:56ch">Do piloto em diante, a Panco negocia espaço com <b style="color:var(--yellow)">evidência</b> — não com opinião.</p>
-      <div data-a style="--d:4;display:flex;gap:12px;margin-top:24px;flex-wrap:wrap">
-        <a class="btn wht" href="mailto:marketing@75lab.com.br?subject=Panco%20%C2%B7%20Desenho%20do%20piloto%20de%20PDV&amp;body=Vamos%20fechar%20o%20desenho%20do%20piloto%20a%20partir%20do%20Trade%20Visit%20j%C3%A1%20realizado.">Definir o desenho do piloto <svg><use href="#i-mail"/></svg></a>
-        <button class="btn ghow" data-go="5">Rever as 3 frentes</button>
-        <button class="btn ghow" id="btnPrint2">Baixar PDF <svg><use href="#i-down"/></svg></button>
-      </div>
-      <div class="ask" data-a style="--d:5">
-        <div class="as"><svg><use href="#i-check"/></svg><span>SKUs por frente, pesos e dimensões reais</span></div>
-        <div class="as"><svg><use href="#i-check"/></svg><span>Redes e formatos de loja prioritários</span></div>
-        <div class="as"><svg><use href="#i-check"/></svg><span>Baseline: sell-out, facings, giro e ruptura</span></div>
-        <div class="as"><svg><use href="#i-check"/></svg><span>Nível de confidencialidade das tortillas</span></div>
-      </div>
-      <div class="sign" data-a style="--d:6">
-        <img class="pl" src="assets/panco_logo.svg" alt="Panco">
-        <span>×</span>
-        <img class="l75" src="assets/75lab-wordmark-black.png" alt="75 LAB">
-        <span style="margin-left:auto">75 LAB · Trade Marketing · 75lab.com.br</span>
+      <div class="foot">
+        <div class="ask" data-a style="--d:5">
+          <div class="as"><svg><use href="#i-check"/></svg><span>SKUs por frente, pesos e dimensões reais</span></div>
+          <div class="as"><svg><use href="#i-check"/></svg><span>Redes e formatos de loja prioritários</span></div>
+          <div class="as"><svg><use href="#i-check"/></svg><span>Baseline: sell-out, facings, giro e ruptura</span></div>
+          <div class="as"><svg><use href="#i-check"/></svg><span>Nível de confidencialidade das tortillas</span></div>
+        </div>
+        <div class="sign" data-a style="--d:6">
+          <img class="pl" src="assets/panco_logo.svg" alt="Panco">
+          <span>×</span>
+          <img class="l75" src="assets/75lab-wordmark-black.png" alt="75 LAB">
+          <span style="margin-left:auto">75 LAB · Trade Marketing · 75lab.com.br</span>
+        </div>
       </div>
     </div>
   </section>
