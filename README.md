@@ -1,6 +1,6 @@
 # Panco · Sistema de presença no PDV — 75 LAB
 
-Apresentação comercial em HTML (11 telas) da proposta estratégica da 75 LAB para a **Panco**:
+Apresentação comercial em HTML (13 telas) da proposta estratégica da 75 LAB para a **Panco**:
 um sistema de presença no ponto de venda que integra as três frentes do briefing —
 **Linha Sobremesas**, **Lançamento Tortillas** e **Ilha Cash & Carry** — em um menu modular
 de MPDV, com piloto, rollout por ondas e cenários de dimensionamento.
@@ -18,17 +18,19 @@ identificada no Trade Visit.
 ## Roteiro (começo · meio · fim)
 | # | Tela | Papel |
 |---|------|-------|
-| 01 | A marca mais fácil de encontrar | capa e promessa |
-| 02 | Três frentes, uma mesma pergunta | o desafio |
+| 01 | A marca mais fácil de encontrar | capa, com a marca Panco em destaque |
+| 02 | Três frentes, a mesma raiz | o desafio e as três perguntas do briefing |
 | 03 | A tese: arquitetura de PDV | o insight (leitura em 10 m / 3–5 m / 0–1 m) |
 | 04 | Por que agora | dados de mercado (ABIMAPI, ABRAS) |
-| 05 | Jornada do shopper | a escada de leitura + os 4 key visuals (horizontal e vertical de cada território) |
-| 06 | Enxoval de categorização | as 10 peças que separam as 8 categorias no ponto natural |
-| 07 | As 3 frentes na prática | abas interativas com renders |
-| 08 | Menu modular de MPDV | 14 peças em 3 níveis de ambição |
-| 09 | O piloto como laboratório | cronograma (Trade Visit já concluído), desenho e KPIs |
-| 10 | Dimensionamento e pacotes | 4 cenários de lojas/peças/prazo + 3 pacotes de contratação |
-| 11 | Próximo passo | Trade Visit ✓ → Piloto → Rollout |
+| 05 | Jornada do shopper | a escada de leitura + os 4 key visuals |
+| 06 | Trade Visit: cinco travas | o diagnóstico em campo, com o registro fotográfico por trava |
+| 07 | Enxoval de categorização | as 10 peças que separam as 8 categorias no ponto natural |
+| 08 | Antes e depois | três situações da loja, antes e com o sistema aplicado |
+| 09 | As frentes na prática | Linha Sobremesas e Ilha Cash & Carry, lado a lado |
+| 10 | Menu modular de MPDV | 14 peças em 3 níveis de ambição |
+| 11 | O piloto como laboratório | cronograma (Trade Visit já concluído), números e KPIs |
+| 12 | Dimensionamento e pacotes | 4 cenários de lojas/peças/prazo + 3 pacotes de contratação |
+| 13 | Próximo passo | Trade Visit ✓ → Piloto → Rollout |
 
 ## Como usar
 - Abra `index.html` no navegador (ou sirva a pasta com qualquer servidor estático).
@@ -53,6 +55,12 @@ território e abre em tela cheia no clique.
 Os renders em `assets/` vêm do estudo `PANCO_Estrategia_3_Frentes_MPDV_75LAB.pptx` (75 LAB),
 otimizados em WebP. Os fundos das três vistas da ilha foram recortados para compor sobre as
 áreas vermelhas. Para trocar qualquer peça, basta substituir o arquivo mantendo o nome.
+
+## Fotos do Trade Visit e antes/depois
+`assets/tv-a1..e3.webp` são 15 fotos da visita (10/09/2026), três por trava da tela 06.
+A tela 08 compara três situações: o *antes* usa `tv-a2`, `tv-a3` e `tv-e1`; o *depois* espera
+`assets/dep-1.webp`, `dep-2.webp` e `dep-3.webp`. Enquanto esses arquivos não existirem, o painel
+mostra um slot pontilhado; basta salvar as artes com esses nomes para elas entrarem automaticamente.
 
 ## Fonte da estratégia
 `PANCO_Estrategia_3_Frentes_MPDV_75LAB.pptx` (38 slides) — diagnóstico, arquitetura de leitura,

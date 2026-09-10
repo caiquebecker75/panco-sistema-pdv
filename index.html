@@ -94,7 +94,7 @@ body.hidecur #cur,body.hidecur #curDot{opacity:0}
 .xm{font-size:13px;font-weight:800;color:var(--ink3)}
 body.onred .xm{color:rgba(255,255,255,.6)}
 body.onred .l75{filter:invert(1) brightness(2)}
-body.onred .chip{color:rgba(255,255,255,.85);border-color:rgba(255,255,255,.35)}
+body.onred .chip{color:#fff;background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.45);box-shadow:none}
 body.onred .chip:hover{background:#fff;color:var(--red);border-color:#fff}
 body.onred .nb{border-color:rgba(255,255,255,.35);color:#fff}
 body.onred .nb:hover{background:#fff;color:var(--red);border-color:#fff}
@@ -102,8 +102,9 @@ body.onred #count{color:rgba(255,255,255,.7)}
 body.onred #count b{color:#fff}
 body.onred .part{color:rgba(255,255,255,.6)}
 body.onred .part i{color:var(--yellow)}
-.chip{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);
-  border:1.5px solid var(--line2);border-radius:100px;padding:7px 15px;transition:.25s;white-space:nowrap}
+.chip{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);
+  background:rgba(255,255,255,.94);border:1.5px solid var(--line2);border-radius:100px;padding:7px 15px;
+  transition:.25s;white-space:nowrap;backdrop-filter:blur(3px);box-shadow:0 2px 10px rgba(35,31,32,.08)}
 .chip:hover{color:#fff;background:var(--red);border-color:var(--red)}
 #prog{position:absolute;top:0;left:0;height:3px;background:var(--red);z-index:90;transition:width .55s var(--ease)}
 body.onred #prog{background:var(--yellow)}
@@ -314,7 +315,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 .s1 .cvr i:nth-child(1){background:var(--red5);left:6%;right:0}
 .s1 .cvr i:nth-child(2){background:var(--red4);left:12%;right:0}
 .s1 .cvr i:nth-child(3){background:var(--red);left:18%;right:0}
-.s1 .mark{position:absolute;right:0;top:0;bottom:104px;width:47%;z-index:3;display:flex;flex-direction:column;
+.s1 .mark{position:absolute;right:0;top:0;bottom:104px;width:38.5%;z-index:3;display:flex;flex-direction:column;
   align-items:center;justify-content:center;gap:30px}
 .s1 .mark img{width:410px;filter:drop-shadow(0 24px 48px rgba(0,0,0,.26))}
 .s1 .mark .sig{position:relative;font-size:28px;font-weight:900;font-style:italic;color:#fff;letter-spacing:-.02em}
@@ -325,17 +326,17 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 /* 02 desafio */
 .s2 .body{gap:26px}
 .s2 .f3{display:grid}
-.s2 .frow{display:grid;grid-template-columns:82px 1fr 158px;gap:24px;align-items:center;text-align:left;
-  padding:13px 18px 13px 6px;border-top:1.5px solid var(--line);transition:.3s var(--ease)}
+.s2 .frow{display:grid;grid-template-columns:86px 1fr;gap:24px;align-items:start;text-align:left;
+  padding:16px 18px 16px 6px;border-top:1.5px solid var(--line);transition:.3s var(--ease)}
 .s2 .frow:last-child{border-bottom:1.5px solid var(--line)}
 .s2 .fn{font-size:46px;font-weight:1000;line-height:1;letter-spacing:-.045em;color:rgba(225,37,27,.3);transition:.3s}
 .s2 .frow:hover{background:var(--cream)}
 .s2 .frow:hover .fn{color:var(--red)}
 .s2 .ft h3{font-size:28px;letter-spacing:-.028em}
 .s2 .ft p{font-size:14.5px;font-weight:600;line-height:1.45;color:var(--ink2);margin-top:5px;max-width:70ch}
-.s2 .frow .im{display:block;position:relative;height:88px}
-.s2 .frow .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transition:transform .4s var(--ease)}
-.s2 .frow:hover .im img{transform:scale(1.07)}
+.s2 .fq{display:flex;gap:9px;align-items:flex-start;margin-top:9px}
+.s2 .fq svg{width:17px;height:17px;flex:0 0 17px;margin-top:1px;stroke:var(--red);fill:none;stroke-width:2.6;stroke-linecap:round}
+.s2 .fq b{font-size:15px;font-weight:900;line-height:1.3;color:var(--red);letter-spacing:-.015em}
 /* 03 tese */
 .s3{padding-bottom:0!important}
 .s3 .wrap{display:grid;grid-template-columns:1fr 700px;gap:44px;align-items:center;height:100%}
@@ -378,22 +379,64 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 .s5 .tv .zi svg{width:12px;height:12px;stroke:var(--red);fill:none;stroke-width:2.6;stroke-linecap:round}
 .s5 .tinfo{min-height:96px}
 .s5 .tinfo h3{margin-bottom:8px}
-/* 06 enxoval de categorização */
+/* 06 trade visit */
+.tv .wrap{display:grid;grid-template-columns:1fr 706px;gap:40px;align-items:center}
+.tv .list{display:grid;gap:9px}
+.tv .ins{display:flex;align-items:center;gap:14px;text-align:left;padding:13px 16px;border-radius:15px;
+  border:1.5px solid var(--line);background:#fff;transition:.3s var(--ease)}
+.tv .ins .n2{font-size:13px;font-weight:1000;color:var(--red);min-width:20px}
+.tv .ins svg{width:21px;height:21px;flex:0 0 21px;stroke:var(--red);fill:none;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round}
+.tv .ins span{font-size:15.5px;font-weight:800;line-height:1.25}
+.tv .ins:hover{border-color:var(--red);background:var(--cream)}
+.tv .ins.sel{background:var(--red);border-color:var(--red);color:#fff}
+.tv .ins.sel .n2{color:var(--yellow)}
+.tv .ins.sel svg{stroke:var(--yellow)}
+.tv .ph{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;height:428px}
+.tv .ph .render{height:100%}
+/* 08 antes e depois */
+.ba .body{gap:20px}
+.ba .cmp{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.ba .pane{display:flex;flex-direction:column;gap:12px}
+.ba .box{position:relative;height:396px;border-radius:20px;overflow:hidden;border:1.5px solid var(--line);background:var(--cream)}
+.ba .box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba .box .badge{position:absolute;left:12px;top:12px;z-index:3;font-size:10.5px;font-weight:900;letter-spacing:.18em;
+  text-transform:uppercase;padding:6px 13px;border-radius:100px;background:var(--ink);color:#fff}
+.ba .pane.aft .box{border-color:var(--red)}
+.ba .pane.aft .badge{background:var(--red)}
+.ba .box .zi{position:absolute;right:12px;top:12px;z-index:3;width:28px;height:28px;border-radius:50%;
+  background:rgba(255,255,255,.94);display:grid;place-items:center;opacity:0;transition:.3s;box-shadow:0 2px 10px rgba(35,31,32,.14)}
+.ba .box:hover .zi{opacity:1}
+.ba .box .zi svg{width:13px;height:13px;stroke:var(--red);fill:none;stroke-width:2.6;stroke-linecap:round}
+.ba .box .slot{display:none;position:absolute;inset:0;place-items:center;align-content:center;gap:10px;text-align:center;padding:24px;
+  border:2.5px dashed var(--line2);border-radius:19px;background:var(--cream)}
+.ba .box.empty .slot{display:grid}
+.ba .box.empty img{display:none}
+.ba .box .slot b{font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3)}
+.ba .box .slot span{font-size:12.5px;font-weight:600;color:var(--ink3);max-width:32ch;line-height:1.4}
+.ba .cap2{font-size:14px;font-weight:700;line-height:1.4;color:var(--ink2);min-height:40px}
+.ba .cap2 b{color:var(--ink);font-weight:900}
+/* 07 enxoval de categorização */
 .sc .body{gap:22px}
 .sc .cats{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}
 .sc .cats .render{height:200px}
 .sc .cats .render .cap{left:9px;bottom:9px;font-size:9px;padding:4px 9px}
 /* 07 frentes */
-.s6 .wrap{display:grid;grid-template-columns:470px 1fr;gap:36px;align-items:stretch;flex:1;min-height:0}
-.s6 .hd{gap:16px}
-.s6 .body{margin-top:22px}
-.s6 .pecas{display:flex;flex-direction:column;gap:10px}
-.s6 .col{display:flex;flex-direction:column;justify-content:space-between;gap:18px;min-height:0}
-.s6 .gal{display:grid;grid-template-columns:1.55fr 1fr;grid-template-rows:1fr 1fr;gap:14px;min-height:0}
-.s6 .gal .render:first-child{grid-row:span 2}
-.s6 .obj{background:var(--red);color:#fff;border-radius:18px;padding:17px 20px;display:flex;gap:12px;align-items:flex-start}
-.s6 .obj svg{width:22px;height:22px;flex:0 0 22px;stroke:var(--yellow);fill:none;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
-.s6 .obj p{font-size:15px;font-weight:800;line-height:1.35}
+.s6 .hd{gap:14px}
+.s6 .body{margin-top:20px;gap:20px}
+.s6 .f2{display:grid;grid-template-columns:1fr 1fr;gap:30px;flex:1;min-height:0}
+.s6 .fcol{display:flex;flex-direction:column;gap:15px;min-height:0}
+.s6 .fhead{display:flex;align-items:center;gap:14px}
+.s6 .fhead h3{font-size:25px;letter-spacing:-.028em}
+.s6 .fhead .kicker{margin-top:3px}
+.s6 .obj{background:var(--red);color:#fff;border-radius:16px;padding:15px 18px;display:flex;gap:12px;align-items:flex-start}
+.s6 .obj svg{width:20px;height:20px;flex:0 0 20px;stroke:var(--yellow);fill:none;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
+.s6 .obj p{font-size:14.5px;font-weight:800;line-height:1.32}
+.s6 .gal2{display:grid;grid-template-columns:1.4fr 1fr;gap:12px;height:206px}
+.s6 .bul li{font-size:14px}
+.s6 .rule{display:flex;gap:11px;align-items:center;border-left:3px solid var(--red);
+  background:var(--cream);border-radius:0 14px 14px 0;padding:14px 18px}
+.s6 .rule p{font-size:14.5px;font-weight:800;line-height:1.35;color:var(--ink)}
+.s6 .rule p em{font-style:normal;color:var(--red)}
 /* 07 menu mpdv */
 .s7 .pieces{display:grid;grid-template-columns:repeat(7,1fr);gap:11px}
 .s7 .pc{border:1.5px solid var(--line);border-radius:16px;background:var(--cream);padding:9px;display:flex;
@@ -518,6 +561,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 <symbol id="i-x" viewBox="0 0 24 24"><path d="M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/></symbol>
 <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.4S4.8 15.2 4.8 10A7.2 7.2 0 0 1 19.2 10c0 5.2-7.2 11.4-7.2 11.4z"/><circle cx="12" cy="9.8" r="2.6"/></symbol>
 <symbol id="i-cycle" viewBox="0 0 24 24"><path d="M20.4 12a8.4 8.4 0 0 1-14.6 5.6M3.6 12A8.4 8.4 0 0 1 18.2 6.4"/><path d="M18.2 2.8v3.6h-3.6M5.8 21.2v-3.6h3.6"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9.3 17.4a6.6 6.6 0 1 1 5.4 0"/><path d="M9.4 17.4h5.2M10.2 20.6h3.6"/></symbol>
 <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.4S3.6 15.2 3.6 9.4A4.4 4.4 0 0 1 12 7.4a4.4 4.4 0 0 1 8.4 2c0 5.8-8.4 11-8.4 11z"/></symbol>
 </defs></svg>
 
@@ -560,7 +604,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
       <img src="assets/panco_logo.svg" alt="Panco">
       <span class="sig">Amor, carinho e dedicação.</span>
     </div>
-    <div class="dots" style="right:9%;bottom:188px;grid-template-columns:repeat(3,1fr);z-index:4">
+    <div class="dots" style="right:5.5%;bottom:150px;grid-template-columns:repeat(3,1fr);z-index:4">
       <i class="dw"></i><i class="dy"></i><i class="dw"></i><i class="dy"></i><i class="dw"></i><i class="db"></i>
     </div>
     <div class="lft">
@@ -574,7 +618,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
       </div>
       <div data-a style="--d:4;display:flex;gap:12px;margin-top:6px">
         <button class="btn pri" data-go="1">Começar a apresentação <svg><use href="#i-arrow"/></svg></button>
-        <button class="btn gho" data-go="9">Ver o dimensionamento</button>
+        <button class="btn gho" data-go="11">Ver o dimensionamento</button>
       </div>
     </div>
   </section>
@@ -583,30 +627,30 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
   <section class="slide s2" data-part="Parte 01 · O desafio" data-chrome="ink">
     <div class="hd">
       <div class="eyebrow" data-a>O ponto de partida</div>
-      <h2 data-a style="--d:1">Três frentes. <em>Uma mesma pergunta.</em></h2>
-      <p class="lede" data-a style="--d:2">O briefing pede materiais para desafios diferentes. Todos têm a mesma raiz: portfólio amplo, sem sistema de leitura na loja.</p>
+      <h2 data-a style="--d:1">Três frentes. <em>A mesma raiz.</em></h2>
+      <p class="lede" data-a style="--d:2;max-width:none">O briefing pede materiais para desafios diferentes, e todos nascem do mesmo ponto: portfólio amplo, sem sistema de leitura na loja.</p>
     </div>
     <div class="body">
       <div class="f3">
-        <button class="frow" data-a style="--d:3" data-go="6" data-tab="0">
+        <button class="frow" data-a style="--d:3" data-go="8">
           <span class="fn">01</span>
-          <span class="ft"><h3>Linha Sobremesas</h3><p>Wafer, recheados e bolinhos: indulgência que pede missão de compra, blocagem e impulso.</p></span>
-          <span class="im"><img src="assets/display-balcao-infantil.webp" alt="Display de balcão da linha Sobremesas"></span>
+          <span class="ft"><h3>Linha Sobremesas</h3><p>Wafer, recheados e bolinhos: indulgência que pede missão de compra, blocagem e impulso.</p>
+            <span class="fq"><svg><use href="#i-help"/></svg><b>Como organizar indulgência sem virar mais uma embalagem na gôndola?</b></span></span>
         </button>
-        <button class="frow" data-a style="--d:4" data-go="6" data-tab="1">
+        <button class="frow" data-a style="--d:4" data-go="8">
           <span class="fn">02</span>
-          <span class="ft"><h3>Lançamento Tortillas</h3><p>Categoria nova e confidencial: precisa de ruptura visual, educação de uso e permissão de compra.</p></span>
-          <span class="im"><img src="assets/display-balcao-adulto.webp" alt="Plataforma de lançamento em display de balcão"></span>
+          <span class="ft"><h3>Lançamento Tortillas</h3><p>Categoria nova e confidencial: precisa de ruptura visual, educação de uso e permissão de compra.</p>
+            <span class="fq"><svg><use href="#i-help"/></svg><b>Como dar impacto a uma categoria que o shopper ainda não procura?</b></span></span>
         </button>
-        <button class="frow" data-a style="--d:5" data-go="6" data-tab="2">
+        <button class="frow" data-a style="--d:5" data-go="8">
           <span class="fn">03</span>
-          <span class="ft"><h3>Ilha Cash &amp; Carry</h3><p>Grande exposição de atacarejo: escala e operação, sem abrir mão de design e marca.</p></span>
-          <span class="im"><img src="assets/ilha-frontal.webp" alt="Ilha Panco para atacarejo"></span>
+          <span class="ft"><h3>Ilha Cash &amp; Carry</h3><p>Grande exposição de atacarejo: escala e operação, sem abrir mão de design e marca.</p>
+            <span class="fq"><svg><use href="#i-help"/></svg><b>Como fazer volume parecer marca, e não apenas estoque?</b></span></span>
         </button>
       </div>
       <div class="qband" data-a style="--d:6">
         <svg class="q" viewBox="0 0 24 24"><use href="#i-help"/></svg>
-        <p>Como transformar um portfólio amplo em <b style="color:var(--yellow)">navegação clara</b> dentro da loja?</p>
+        <p>A resposta não é mais material. É mais <b style="color:var(--yellow)">sistema</b>.</p>
         <button class="btn wht" data-go="2">Ver a tese <svg><use href="#i-arrow"/></svg></button>
       </div>
     </div>
@@ -627,7 +671,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
         </ul>
         <div data-a style="--d:4;display:flex;gap:12px;margin-top:6px">
           <button class="btn wht" data-go="3">Por que agora <svg><use href="#i-arrow"/></svg></button>
-          <button class="btn ghow" data-go="6">Ver as 3 frentes</button>
+          <button class="btn ghow" data-go="8">Ver as 3 frentes</button>
         </div>
       </div>
       <div class="dist" data-a style="--d:2">
@@ -716,7 +760,30 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     </div>
   </section>
 
-  <!-- ============ 06 · ENXOVAL DE CATEGORIZAÇÃO ============ -->
+  <!-- ============ 06 · TRADE VISIT ============ -->
+  <section class="slide tv" data-part="Parte 02 · Trade Visit" data-chrome="ink">
+    <div class="hd">
+      <div class="eyebrow" data-a>Trade Visit · o que vimos na loja</div>
+      <div style="display:flex;align-items:flex-end;gap:30px;flex-wrap:wrap">
+        <h2 data-a style="--d:1;flex:1">Cinco travas no <em>ponto natural</em>.</h2>
+        <p class="note" data-a style="--d:2;max-width:300px;text-align:right">Clique em cada trava para ver o registro fotográfico da visita.</p>
+      </div>
+    </div>
+    <div class="body">
+      <div class="wrap">
+        <div class="list" id="tvList"></div>
+        <div>
+          <div class="ph" id="tvPh"></div>
+          <div style="display:flex;align-items:center;gap:16px;margin-top:16px">
+            <p class="note" id="tvCap" style="flex:1"></p>
+            <button class="btn pri" data-go="6" data-a style="--d:6">Ver a solução <svg><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 07 · ENXOVAL DE CATEGORIZAÇÃO ============ -->
   <section class="slide sc warm" data-part="Parte 02 · Ponto natural" data-chrome="ink">
     <div class="hd">
       <div class="eyebrow" data-a>O que falta hoje no ponto natural</div>
@@ -780,28 +847,99 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     </div>
   </section>
 
-  <!-- ============ 07 · AS 3 FRENTES ============ -->
-  <section class="slide s6" data-part="Parte 02 · As 3 frentes" data-chrome="ink">
+  <!-- ============ 08 · ANTES E DEPOIS ============ -->
+  <section class="slide ba warm" data-part="Parte 02 · Antes e depois" data-chrome="ink">
     <div class="hd">
-      <div class="eyebrow" data-a>O plano integrado</div>
+      <div class="eyebrow" data-a>A transformação</div>
       <div style="display:flex;align-items:flex-end;gap:30px;flex-wrap:wrap">
-        <h2 data-a style="--d:1;flex:1">Um repertório. <em>Três papéis.</em></h2>
-        <div class="seg" id="fSeg" data-a style="--d:2">
-          <button class="sel" data-t="0"><svg><use href="#i-cookie"/></svg>Sobremesas</button>
-          <button data-t="1"><svg><use href="#i-wrap"/></svg>Tortillas</button>
-          <button data-t="2"><svg><use href="#i-island"/></svg>Cash &amp; Carry</button>
-        </div>
+        <h2 data-a style="--d:1;flex:1">O mesmo espaço, <em>com sistema</em>.</h2>
+        <div class="seg lite" id="baSeg" data-a style="--d:2"></div>
       </div>
     </div>
     <div class="body">
-      <div class="wrap">
-        <div class="col" id="fCol"></div>
-        <div class="gal" id="fGal"></div>
+      <div class="cmp">
+        <div class="pane">
+          <div class="box" id="baA">
+            <img src="" alt="Situação encontrada no Trade Visit">
+            <span class="badge">Antes</span>
+            <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
+            <span class="slot"><b>Foto do antes</b></span>
+          </div>
+          <p class="cap2" id="baCapA"></p>
+        </div>
+        <div class="pane aft">
+          <div class="box" id="baB">
+            <img src="" alt="Proposta da 75 LAB para o mesmo espaço">
+            <span class="badge">Depois</span>
+            <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
+            <span class="slot"><b>Espaço do render</b><span>Salve a arte do depois em assets/ com este nome para ela entrar aqui.</span></span>
+          </div>
+          <p class="cap2" id="baCapB"></p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ 08 · MENU DE MPDV ============ -->
+  <!-- ============ 09 · AS FRENTES ============ -->
+  <section class="slide s6" data-part="Parte 02 · As frentes" data-chrome="ink">
+    <div class="hd">
+      <div class="eyebrow" data-a>O plano integrado</div>
+      <h2 data-a style="--d:1">Um repertório. <em>Dois papéis na loja.</em></h2>
+    </div>
+    <div class="body">
+      <div class="f2">
+        <div class="fcol">
+          <div class="fhead" data-a style="--d:2">
+            <div class="icob"><svg class="ico"><use href="#i-cookie"/></svg></div>
+            <div><h3>Linha Sobremesas</h3><div class="kicker">Impulso e indulgência</div></div>
+          </div>
+          <div class="obj" data-a style="--d:3"><svg><use href="#i-target"/></svg><p>Organizar indulgência e transformar variedade em impulso.</p></div>
+          <div class="gal2" data-a style="--d:3">
+            <button class="render zoom" data-img="assets/display-balcao-infantil.webp" data-cap="Display de balcão"><img src="assets/display-balcao-infantil.webp" alt="Display de balcão"><span class="cap">Display de balcão</span><span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span></button>
+            <button class="render zoom" data-img="assets/torre-cubos-infantil.webp" data-cap="Torre de cubos"><img src="assets/torre-cubos-infantil.webp" alt="Torre de cubos"><span class="cap">Torre de cubos</span><span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span></button>
+          </div>
+          <ul class="bul" data-a style="--d:4">
+            <li><svg><use href="#i-bolt"/></svg><span><b>Lanche rápido:</b> bolinhos e packs individuais perto do fluxo e do checkout</span></li>
+            <li><svg><use href="#i-heart"/></svg><span><b>Indulgência:</b> recheados e cobertos com apelo sensorial e de desejo</span></li>
+            <li><svg><use href="#i-box"/></svg><span><b>Abastecimento:</b> wafer e biscoitos por ocasião familiar, com preço visível</span></li>
+          </ul>
+          <div class="chips" data-a style="--d:4">
+            <span class="tag">Gôndola principal</span>
+            <span class="tag b">Ponta e ilha promocional</span>
+            <span class="tag">Checkout e fluxo</span>
+            <span class="tag y">Cross com café e leite</span>
+          </div>
+        </div>
+        <div class="fcol">
+          <div class="fhead" data-a style="--d:5">
+            <div class="icob"><svg class="ico"><use href="#i-island"/></svg></div>
+            <div><h3>Ilha Cash &amp; Carry</h3><div class="kicker">Volume e rotina</div></div>
+          </div>
+          <div class="obj" data-a style="--d:6"><svg><use href="#i-target"/></svg><p>Tratar a grande exposição como mídia física permanente da marca.</p></div>
+          <div class="gal2" data-a style="--d:6">
+            <button class="render zoom" data-img="assets/ilha-frontal.webp" data-cap="Estação Panco"><img src="assets/ilha-frontal.webp" alt="Estação Panco"><span class="cap">Estação Panco</span><span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span></button>
+            <button class="render zoom" data-img="assets/pallet-paes.webp" data-cap="Pallet wrap de pães"><img src="assets/pallet-paes.webp" alt="Pallet wrap de pães"><span class="cap">Pallet wrap de pães</span><span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span></button>
+          </div>
+          <ul class="bul" data-a style="--d:7">
+            <li><svg><use href="#i-wheat"/></svg><span><b>Padaria de verdade:</b> madeira, vime, trigo e textura de pão</span></li>
+            <li><svg><use href="#i-layers"/></svg><span><b>Portfólio navegável:</b> organizado por linha e momento de consumo</span></li>
+            <li><svg><use href="#i-cycle"/></svg><span><b>Feita para operar:</b> pallet-in, gavetas ocultas, rodízios e bumper</span></li>
+          </ul>
+          <div class="chips" data-a style="--d:7">
+            <span class="tag">Visibilidade 360°</span>
+            <span class="tag b">Comunicação intercambiável</span>
+            <span class="tag">Alto fluxo</span>
+            <span class="tag y">Reposição rápida</span>
+          </div>
+        </div>
+      </div>
+      <div class="rule" data-a style="--d:8">
+        <p>Quanto maior o <em>impulso</em>, mais perto do fluxo e mais simples a mensagem. Quanto maior o <em>volume</em>, mais a peça precisa operar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10 · MENU DE MPDV ============ -->
   <section class="slide s7 warm" data-part="Parte 02 · Menu de MPDV" data-chrome="ink">
     <div class="hd">
       <div class="eyebrow" data-a>O repertório</div>
@@ -833,7 +971,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     </div>
   </section>
 
-  <!-- ============ 09 · O PILOTO ============ -->
+  <!-- ============ 11 · O PILOTO ============ -->
   <section class="slide s8" data-part="Parte 03 · Piloto e rollout" data-chrome="ink">
     <div class="hd">
       <div class="eyebrow" data-a>Do diagnóstico ao piloto</div>
@@ -869,12 +1007,12 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
       <div class="qband" data-a style="--d:11">
         <svg class="q" viewBox="0 0 24 24"><use href="#i-help"/></svg>
         <p>A pergunta do piloto não é “a peça ficou bonita?”. É “qual configuração vende mais, opera melhor e convence o varejo?”.</p>
-        <button class="btn wht" data-go="9">Ver o dimensionamento <svg><use href="#i-arrow"/></svg></button>
+        <button class="btn wht" data-go="11">Ver o dimensionamento <svg><use href="#i-arrow"/></svg></button>
       </div>
     </div>
   </section>
 
-  <!-- ============ 10 · DIMENSIONAMENTO ============ -->
+  <!-- ============ 12 · DIMENSIONAMENTO ============ -->
   <section class="slide s9" data-part="Parte 04 · Dimensionamento" data-chrome="ink">
     <div class="hd">
       <div class="eyebrow" data-a>O dimensionamento</div>
@@ -927,7 +1065,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     </div>
   </section>
 
-  <!-- ============ 11 · PRÓXIMO PASSO ============ -->
+  <!-- ============ 13 · PRÓXIMO PASSO ============ -->
   <section class="slide s10 dark" data-part="Fechamento" data-chrome="red">
     <div class="cv"><i></i><i></i><i></i></div>
     <div class="dots" style="right:56px;top:132px;grid-template-columns:repeat(3,1fr)">
@@ -941,14 +1079,14 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
           <div class="steps" data-a style="--d:2">
             <div class="st done"><svg><use href="#i-check"/></svg>Trade Visit<i>feito</i></div>
             <span class="ar"><svg style="width:24px;height:24px;stroke:var(--yellow);fill:none;stroke-width:2.6;stroke-linecap:round" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>
-            <button class="st" data-go="8"><svg><use href="#i-store"/></svg>Piloto</button>
+            <button class="st" data-go="10"><svg><use href="#i-store"/></svg>Piloto</button>
             <span class="ar"><svg style="width:24px;height:24px;stroke:var(--yellow);fill:none;stroke-width:2.6;stroke-linecap:round" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>
-            <button class="st" data-go="9"><svg><use href="#i-route"/></svg>Rollout</button>
+            <button class="st" data-go="11"><svg><use href="#i-route"/></svg>Rollout</button>
           </div>
           <p class="lede" data-a style="--d:3;color:rgba(255,255,255,.92);max-width:44ch">Do piloto em diante, a Panco negocia espaço com <b style="color:var(--yellow)">evidência</b>, não com opinião.</p>
           <div data-a style="--d:4;display:flex;gap:11px;margin-top:26px;flex-wrap:wrap">
             <a class="btn wht" href="mailto:marketing@75lab.com.br?subject=Panco%20%C2%B7%20Desenho%20do%20piloto%20de%20PDV&amp;body=Vamos%20fechar%20o%20desenho%20do%20piloto%20a%20partir%20do%20Trade%20Visit%20j%C3%A1%20realizado.">Definir o desenho do piloto <svg><use href="#i-mail"/></svg></a>
-            <button class="btn ghow" data-go="6">Rever as 3 frentes</button>
+            <button class="btn ghow" data-go="8">Rever as 3 frentes</button>
             <button class="btn ghow" id="btnPrint2">Baixar PDF <svg><use href="#i-down"/></svg></button>
           </div>
         </div>
@@ -995,11 +1133,6 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 </div>
 
 <style>
-.s6 .gal{grid-template-columns:1.5fr 1fr;grid-template-rows:repeat(3,1fr)}
-.s6 .gal .render:first-child{grid-row:span 3}
-.s6 .rule{display:flex;gap:11px;align-items:flex-start;border-left:3px solid var(--red);padding-left:14px;
-  background:var(--cream);border-radius:0 14px 14px 0;padding:14px 16px 14px 15px}
-.s6 .rule p{font-size:13.5px;font-weight:800;line-height:1.35;color:var(--ink)}
 .s9 .sc-n.pop{animation:popn .5s var(--ease) both}
 @keyframes popn{from{opacity:0;transform:translateY(10px) scale(.96)}to{opacity:1;transform:none}}
 .s10 .sign span{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7)}
@@ -1032,7 +1165,7 @@ addEventListener("resize",fit);fit();
 
 var slides=$$(".slide"),N=slides.length,i=0,busy=false;
 var TITLES=["A marca mais fácil de encontrar","Três frentes, uma pergunta","A tese: arquitetura de PDV",
-  "Por que agora","Jornada do shopper","Enxoval de categorização","As 3 frentes na prática","Menu modular de MPDV",
+  "Por que agora","Jornada do shopper","Trade Visit: cinco travas","Enxoval de categorização","Antes e depois","As frentes na prática","Menu modular de MPDV",
   "O piloto como laboratório","Dimensionamento e pacotes","Próximo passo"];
 
 function setChrome(){
@@ -1108,57 +1241,72 @@ $("#terrSeg").addEventListener("click",function(e){
 });
 terr(0);
 
-/* ---------------- Tela 06 · as 3 frentes ---------------- */
-var FRENTES=[
- {obj:"Organizar indulgência e transformar variedade em impulso.",
-  bul:[["i-bolt","<b>Lanche rápido:</b> bolinhos e packs individuais perto do fluxo e do checkout"],
-       ["i-heart","<b>Indulgência:</b> recheados e cobertos com comunicação sensorial e apelo de desejo"],
-       ["i-box","<b>Abastecimento:</b> wafer e biscoitos por ocasião familiar, com blocagem e preço visível"]],
-  chips:["Gôndola principal","Ponta e ilha promocional","Checkout e fluxo","Cross com café e leite"],
-  rule:"Quanto maior o impulso, mais perto do fluxo e mais simples a mensagem.",
-  gal:[["display-balcao-infantil","Display de balcão"],["cubo-sobremesas","Cubo de categoria"],
-       ["torre-cubos-infantil","Torre de cubos"],["display-chao-infantil","Display de chão"]]},
- {obj:"Entrar como categoria: impacto, educação de uso e permissão de compra.",
-  bul:[["i-bolt","<b>Entrar:</b> glorifier que avança sobre a prateleira e rompe a homogeneidade"],
-       ["i-help","<b>Explicar:</b> uso e ocasião de forma simples, sem revelar a estratégia confidencial"],
-       ["i-tag","<b>Converter:</b> preço e oferta reduzem a barreira do primeiro teste"]],
-  chips:["Glorifier de gôndola","Cubo de lançamento","Ponta compacta","Cross com bebidas e molhos"],
-  rule:"O enxoval básico informa. A plataforma “Novo Panco” dá permissão e serve para os próximos lançamentos.",
-  gal:[["display-balcao-adulto","Glorifier de balcão"],["stopper","Stopper de categoria"],
-       ["tag-oferta","Tag de oferta"],["display-recortado","Recorte de lançamento"]]},
- {obj:"Tratar a grande exposição como mídia física permanente: chama, organiza, educa e abastece.",
-  bul:[["i-wheat","<b>Padaria de verdade:</b> madeira, vime, trigo e textura de pão"],
-       ["i-layers","<b>Portfólio navegável:</b> organizado por linha e momento de consumo"],
-       ["i-cycle","<b>Feita para operar:</b> pallet-in, gavetas ocultas, prateleiras ajustáveis, rodízios e bumper"]],
-  chips:["Visibilidade 360°","Comunicação intercambiável","Alto fluxo","Reposição rápida"],
-  rule:"A ilha não é um pallet bonito. É uma plataforma de categoria.",
-  gal:[["ilha-frontal","Estação Panco · frontal"],["ilha-lateral","Vista lateral 360°"],
-       ["pallet-paes","Pallet wrap de pães"],["mobile-adulto","Móbile aéreo"]]}
+/* ---------------- Tela 06 · Trade Visit ---------------- */
+var TRAVAS=[
+ {t:"Categoria com falta de apelo visual",i:"i-eye",g:"a",
+  c:"Gôndolas longas e uniformes: nada chama o shopper nem separa o que é Panco."},
+ {t:"Mistura de produtos sem categorização na gôndola",i:"i-layers",g:"b",
+  c:"Pão, bolo, salgadinho e marcas de terceiros convivendo no mesmo bloco, sem hierarquia."},
+ {t:"Baixa luminosidade",i:"i-bulb",g:"c",
+  c:"Armários refrigerados e nichos escuros apagam a embalagem e o apetite."},
+ {t:"Falta de ambientação e espaço da marca",i:"i-store",g:"d",
+  c:"A padaria é genérica: cestos, madeira e móveis sem nenhuma assinatura Panco."},
+ {t:"Materiais sem formato adequado para o ponto natural",i:"i-ruler",g:"e",
+  c:"O material que existe não cabe na gôndola: fica no fim do corredor ou improvisado em aramado."}
 ];
-function frente(k){
-  var d=FRENTES[k];
-  $$("#fSeg button").forEach(function(b,n){b.classList.toggle("sel",n===k)});
-  $("#fCol").innerHTML=
-    '<div class="obj"><svg><use href="#i-target"/></svg><p>'+d.obj+'</p></div>'+
-    '<ul class="bul">'+d.bul.map(function(x){
-      return '<li><svg><use href="#'+x[0]+'"/></svg><span>'+x[1]+'</span></li>'}).join("")+'</ul>'+
-    '<div class="pecas"><div class="kicker">Peças e territórios de loja</div>'+
-    '<div class="chips">'+d.chips.map(function(c,n){
-      return '<span class="tag'+(n===1?" b":(n===3?" y":""))+'">'+c+'</span>'}).join("")+'</div></div>'+
-    '<div class="rule"><p>'+d.rule+'</p></div>';
-  $("#fGal").innerHTML=d.gal.map(function(g,n){
-    return '<button class="render zoom'+(n===0?"":"")+'" data-img="assets/'+g[0]+'.webp" data-cap="'+g[1]+'">'+
-      '<img src="assets/'+g[0]+'.webp" alt="'+g[1]+'">'+
-      '<span class="cap">'+g[1]+'</span>'+
+function trava(k){
+  var d=TRAVAS[k];
+  $$("#tvList .ins").forEach(function(b,n){b.classList.toggle("sel",n===k)});
+  $("#tvPh").innerHTML=[1,2,3].map(function(n){
+    var f="assets/tv-"+d.g+n+".webp";
+    return '<button class="render cover zoom" data-img="'+f+'" data-cap="'+d.t+'">'+
+      '<img src="'+f+'" alt="Registro do Trade Visit: '+d.t+'">'+
       '<span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span></button>';
   }).join("");
+  $("#tvCap").textContent=d.c;
 }
-$("#fSeg").addEventListener("click",function(e){
-  var b=e.target.closest("button[data-t]");if(b)frente(+b.dataset.t);
+$("#tvList").innerHTML=TRAVAS.map(function(d,k){
+  return '<button class="ins" data-k="'+k+'" data-a style="--d:'+(3+k*.6)+'"><span class="n2">0'+(k+1)+
+   '</span><svg><use href="#'+d.i+'"/></svg><span>'+d.t+'</span></button>';
+}).join("");
+$("#tvList").addEventListener("click",function(e){
+  var b=e.target.closest(".ins[data-k]");if(b)trava(+b.dataset.k);
 });
-frente(0);
+trava(0);
 
-/* ---------------- Tela 07 · menu de MPDV ---------------- */
+/* ---------------- Tela 08 · antes e depois ---------------- */
+var PAIRS=[
+ {n:"Gôndola de pães",
+  a:["assets/tv-a2.webp","<b>Antes:</b> corredor uniforme, sem marca e sem separação de categoria."],
+  d:["assets/dep-1.webp","<b>Depois:</b> testeira, régua e laterais dão nome à categoria e fazem a Panco ser vista de longe."]},
+ {n:"Grande exposição",
+  a:["assets/tv-a3.webp","<b>Antes:</b> volume empilhado sem identidade. Parece estoque, não marca."],
+  d:["assets/dep-3.webp","<b>Depois:</b> display modular com testeira, réguas e comunicação. O volume passa a vender marca."]},
+ {n:"Material no ponto natural",
+  a:["assets/tv-e1.webp","<b>Antes:</b> o material que existe não cabe na gôndola e termina no fim do corredor."],
+  d:["assets/dep-2.webp","<b>Depois:</b> peça no formato do ponto natural, aplicada na própria gôndola de pães."]}
+];
+function pair(k){
+  var d=PAIRS[k];
+  $$("#baSeg button").forEach(function(b,n){b.classList.toggle("sel",n===k)});
+  [["#baA","#baCapA",d.a],["#baB","#baCapB",d.d]].forEach(function(x){
+    var box=$(x[0]),im=$("img",box);
+    box.classList.remove("empty");
+    im.onerror=function(){box.classList.add("empty")};
+    im.src=x[2][0];
+    box.setAttribute("data-img",x[2][0]);
+    box.setAttribute("data-cap",d.n);
+    $(x[1]).innerHTML=x[2][1];
+  });
+}
+$("#baSeg").innerHTML=PAIRS.map(function(d,k){
+  return '<button data-p="'+k+'">'+d.n+'</button>'}).join("");
+$("#baSeg").addEventListener("click",function(e){
+  var b=e.target.closest("button[data-p]");if(b)pair(+b.dataset.p);
+});
+pair(0);
+
+/* ---------------- Tela 10 · menu de MPDV ---------------- */
 var PIECES=[
  ["testeira","Testeira",1],["regua","Régua de gôndola",1],["wobbler","Wobbler",1],
  ["tag-oferta","Tag de preço",1],["display-recortado","Cartaz recorte",1],
@@ -1209,7 +1357,7 @@ document.addEventListener("click",function(e){
   if(z){openLb(z.dataset.img,z.dataset.cap);return}
   if(e.target.closest("#lbClose")||e.target===lb){closeLb();return}
   var g=e.target.closest("[data-go]");
-  if(g){var t=g.getAttribute("data-tab");go(+g.dataset.go);if(t!==null)frente(+t);closeMenu()}
+  if(g){go(+g.dataset.go);closeMenu()}
 });
 
 /* ---------------- Índice ---------------- */
