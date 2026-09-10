@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Panco · Sistema de presença no PDV</title>
-<meta name="description" content="Proposta estratégica 75 LAB × Panco — sistema de presença no PDV para Sobremesas, Tortillas e Ilha Cash &amp; Carry, com menu modular de MPDV, piloto e cenários de investimento.">
+<meta name="description" content="Proposta estratégica 75 LAB × Panco. Sistema de presença no PDV para Sobremesas, Tortillas e Ilha Cash &amp; Carry, com menu modular de MPDV, piloto e cenários de investimento.">
 <meta name="theme-color" content="#E1251B">
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -323,19 +323,19 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 .s1 h1{font-size:88px}
 .s1 .dots{z-index:5}
 /* 02 desafio */
-.s2 .g3{grid-template-columns:repeat(3,1fr);gap:20px}
-.s2 .card{padding:0;overflow:hidden}
-.s2 .card .thumb{height:172px;position:relative;background:var(--cream);border-bottom:1.5px solid #F1E4DA;overflow:hidden}
-.s2 .card .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:12px;
-  transition:transform .5s var(--ease)}
-.s2 .card:hover .thumb img{transform:scale(1.06)}
-.s2 .card .in{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
-.s2 .q{margin-top:auto;padding-top:14px;border-top:1.5px solid var(--line);font-size:14.5px;font-weight:900;
-  line-height:1.28;color:var(--red);letter-spacing:-.015em;display:flex;gap:9px}
-.s2 .q svg{width:17px;height:17px;flex:0 0 17px;margin-top:2px;stroke:var(--red);fill:none;stroke-width:2.6;stroke-linecap:round}
-.s2 .fin{display:flex;align-items:center;gap:16px;margin-top:22px}
-.s2 .fin p{font-size:22px;font-weight:900;letter-spacing:-.025em;color:var(--ink)}
-.s2 .fin p em{font-style:normal;color:var(--red)}
+.s2 .body{gap:26px}
+.s2 .f3{display:grid}
+.s2 .frow{display:grid;grid-template-columns:82px 1fr 158px;gap:24px;align-items:center;text-align:left;
+  padding:13px 18px 13px 6px;border-top:1.5px solid var(--line);transition:.3s var(--ease)}
+.s2 .frow:last-child{border-bottom:1.5px solid var(--line)}
+.s2 .fn{font-size:46px;font-weight:1000;line-height:1;letter-spacing:-.045em;color:rgba(225,37,27,.3);transition:.3s}
+.s2 .frow:hover{background:var(--cream)}
+.s2 .frow:hover .fn{color:var(--red)}
+.s2 .ft h3{font-size:28px;letter-spacing:-.028em}
+.s2 .ft p{font-size:14.5px;font-weight:600;line-height:1.45;color:var(--ink2);margin-top:5px;max-width:70ch}
+.s2 .frow .im{display:block;position:relative;height:88px}
+.s2 .frow .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transition:transform .4s var(--ease)}
+.s2 .frow:hover .im img{transform:scale(1.07)}
 /* 03 tese */
 .s3{padding-bottom:0!important}
 .s3 .wrap{display:grid;grid-template-columns:1fr 700px;gap:44px;align-items:center;height:100%}
@@ -418,9 +418,9 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 .s8 .nums .stat b{font-size:60px}
 .s8 .nums .stat b small{font-size:.42em;color:var(--ink3)}
 .s8 .nums .stat span{max-width:26ch}
-.s8 .qband{background:var(--red);color:#fff;border-radius:22px;padding:24px 28px;display:flex;align-items:center;gap:24px}
-.s8 .qband svg.q{width:30px;height:30px;flex:0 0 30px;stroke:var(--yellow);fill:none;stroke-width:2;stroke-linecap:round}
-.s8 .qband p{flex:1;font-size:20px;font-weight:900;line-height:1.26;letter-spacing:-.022em}
+.qband{background:var(--red);color:#fff;border-radius:22px;padding:24px 28px;display:flex;align-items:center;gap:24px}
+.qband svg.q{width:30px;height:30px;flex:0 0 30px;stroke:var(--yellow);fill:none;stroke-width:2;stroke-linecap:round}
+.qband p{flex:1;font-size:20px;font-weight:900;line-height:1.26;letter-spacing:-.022em}
 /* 09 investimento */
 .s9 .wrap{display:grid;grid-template-columns:1fr 560px;gap:40px;align-items:center}
 .s9 .scb{background:var(--red);border-radius:26px;padding:30px 34px;color:#fff;display:flex;flex-direction:column;gap:20px}
@@ -582,40 +582,27 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
       <p class="lede" data-a style="--d:2">O briefing pede materiais para desafios diferentes. Todos têm a mesma raiz: portfólio amplo, sem sistema de leitura na loja.</p>
     </div>
     <div class="body">
-      <div class="grid g3">
-        <button class="card hoverable" data-a style="--d:3" data-go="5" data-tab="0">
-          <div class="thumb"><img src="assets/display-balcao-infantil.webp" alt="Display de balcão da linha Sobremesas"></div>
-          <div class="in">
-            <div class="num">FRENTE 01</div>
-            <h3>Linha Sobremesas</h3>
-            <p>Wafer, recheados e bolinhos: indulgência que pede missão de compra, blocagem e impulso.</p>
-            <div class="q"><svg><use href="#i-help"/></svg>Como organizar indulgência sem virar mais uma embalagem na gôndola?</div>
-          </div>
+      <div class="f3">
+        <button class="frow" data-a style="--d:3" data-go="5" data-tab="0">
+          <span class="fn">01</span>
+          <span class="ft"><h3>Linha Sobremesas</h3><p>Wafer, recheados e bolinhos: indulgência que pede missão de compra, blocagem e impulso.</p></span>
+          <span class="im"><img src="assets/display-balcao-infantil.webp" alt="Display de balcão da linha Sobremesas"></span>
         </button>
-        <button class="card hoverable" data-a style="--d:4" data-go="5" data-tab="1">
-          <div class="thumb"><img src="assets/display-balcao-adulto.webp" alt="Plataforma de lançamento em display de balcão"></div>
-          <div class="in">
-            <div class="num">FRENTE 02</div>
-            <h3>Lançamento Tortillas</h3>
-            <p>Categoria nova e confidencial: precisa de ruptura visual, educação de uso e permissão de compra.</p>
-            <div class="q"><svg><use href="#i-help"/></svg>Como dar impacto a uma categoria que o shopper ainda não procura?</div>
-          </div>
+        <button class="frow" data-a style="--d:4" data-go="5" data-tab="1">
+          <span class="fn">02</span>
+          <span class="ft"><h3>Lançamento Tortillas</h3><p>Categoria nova e confidencial: precisa de ruptura visual, educação de uso e permissão de compra.</p></span>
+          <span class="im"><img src="assets/display-balcao-adulto.webp" alt="Plataforma de lançamento em display de balcão"></span>
         </button>
-        <button class="card hoverable" data-a style="--d:5" data-go="5" data-tab="2">
-          <div class="thumb"><img src="assets/ilha-frontal.webp" alt="Ilha Panco para atacarejo"></div>
-          <div class="in">
-            <div class="num">FRENTE 03</div>
-            <h3>Ilha Cash &amp; Carry</h3>
-            <p>Grande exposição de atacarejo: escala e operação, sem abrir mão de design e marca.</p>
-            <div class="q"><svg><use href="#i-help"/></svg>Como fazer volume parecer marca, e não apenas estoque?</div>
-          </div>
+        <button class="frow" data-a style="--d:5" data-go="5" data-tab="2">
+          <span class="fn">03</span>
+          <span class="ft"><h3>Ilha Cash &amp; Carry</h3><p>Grande exposição de atacarejo: escala e operação, sem abrir mão de design e marca.</p></span>
+          <span class="im"><img src="assets/ilha-frontal.webp" alt="Ilha Panco para atacarejo"></span>
         </button>
       </div>
-      <div class="fin" data-a style="--d:6">
-        <div class="icob"><svg class="ico"><use href="#i-bolt"/></svg></div>
-        <p>A resposta não é mais material. É mais <em>sistema</em>.</p>
-        <div class="spacer" style="flex:1"></div>
-        <button class="btn pri" data-go="2">Ver a tese <svg><use href="#i-arrow"/></svg></button>
+      <div class="qband" data-a style="--d:6">
+        <svg class="q" viewBox="0 0 24 24"><use href="#i-help"/></svg>
+        <p>Como transformar um portfólio amplo em <b style="color:var(--yellow)">navegação clara</b> dentro da loja?</p>
+        <button class="btn wht" data-go="2">Ver a tese <svg><use href="#i-arrow"/></svg></button>
       </div>
     </div>
   </section>
@@ -697,7 +684,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
             <div class="lstep" data-a style="--d:6"><svg><use href="#i-sparkle"/></svg><b>Benefício</b><span>sabor, praticidade, indulgência, qualidade</span></div>
             <div class="lstep" data-a style="--d:7"><svg><use href="#i-tag"/></svg><b>Produto + preço</b><span>a decisão final</span></div>
           </div>
-          <p class="note" data-a style="--d:8;margin-top:20px;font-size:13px">A mesma estrutura serve para comunicação emocional, institucional ou promocional — muda o tom, não a hierarquia. Clique nos KVs para ver em tela cheia.</p>
+          <p class="note" data-a style="--d:8;margin-top:20px;font-size:13px">A mesma estrutura serve para comunicação emocional, institucional ou promocional: muda o tom, não a hierarquia. Clique nos KVs para ver em tela cheia.</p>
         </div>
         <div class="terr">
           <div class="seg lite" id="terrSeg" data-a style="--d:3">
@@ -773,7 +760,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
         </button>
       </div>
       <div class="pieces" id="pieces" style="margin-top:22px"></div>
-      <p class="note" data-a style="--d:8;margin-top:20px">O mesmo repertório atende as 3 frentes, trocando só o KV. Cada peça é cotada por medida, material, acabamento e tiragem — a memória de cálculo vai em proposta comercial separada.</p>
+      <p class="note" data-a style="--d:8;margin-top:20px">O mesmo repertório atende as 3 frentes, trocando só o KV. Cada peça é cotada por medida, material, acabamento e tiragem. A memória de cálculo vai em proposta comercial separada.</p>
     </div>
   </section>
 
@@ -809,7 +796,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
           <span class="tag b">Leitura do shopper</span>
         </div>
       </div>
-      <p class="note" data-a style="--d:10">Saída: case fotográfico, playbook e recomendação de escala — com fotos padronizadas em D0, D7, D14, D21 e D28.</p>
+      <p class="note" data-a style="--d:10">Saída: case fotográfico, playbook e recomendação de escala, com fotos padronizadas em D0, D7, D14, D21 e D28.</p>
       <div class="qband" data-a style="--d:11">
         <svg class="q" viewBox="0 0 24 24"><use href="#i-help"/></svg>
         <p>A pergunta do piloto não é “a peça ficou bonita?”. É “qual configuração vende mais, opera melhor e convence o varejo?”.</p>
@@ -844,7 +831,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
               <div><div class="sc-n" id="scC"></div><div class="sc-l">janela de execução</div></div>
             </div>
           </div>
-          <p class="note" data-a style="--d:4">Dimensionamento preliminar para planejamento. Volumes e escopo fecham após a definição de SKUs, medidas reais das embalagens, materiais e restrições de cada rede — e o investimento é apresentado em proposta comercial separada.</p>
+          <p class="note" data-a style="--d:4">Dimensionamento preliminar para planejamento. Volumes e escopo fecham após a definição de SKUs, medidas reais das embalagens, materiais e restrições de cada rede. O investimento é apresentado em proposta comercial separada.</p>
         </div>
         <div>
           <div class="kicker" data-a style="--d:3;margin-bottom:12px">Pacotes de contratação · orçamento por escopo</div>
@@ -864,7 +851,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
           </div>
           <div class="card red" data-a style="--d:7;margin-top:16px;flex-direction:row;align-items:center;gap:15px;padding:18px 20px">
             <div class="icob"><svg class="ico y"><use href="#i-flag"/></svg></div>
-            <p style="font-size:14.5px;font-weight:800;color:#fff">Os pacotes podem ser contratados por frente — ou como um <b style="color:var(--yellow)">programa Panco de presença no PDV</b>.</p>
+            <p style="font-size:14.5px;font-weight:800;color:#fff">Os pacotes podem ser contratados por frente ou como um <b style="color:var(--yellow)">programa Panco de presença no PDV</b>.</p>
           </div>
         </div>
       </div>
@@ -889,7 +876,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
             <span class="ar"><svg style="width:24px;height:24px;stroke:var(--yellow);fill:none;stroke-width:2.6;stroke-linecap:round" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>
             <button class="st" data-go="8"><svg><use href="#i-route"/></svg>Rollout</button>
           </div>
-          <p class="lede" data-a style="--d:3;color:rgba(255,255,255,.92);max-width:44ch">Do piloto em diante, a Panco negocia espaço com <b style="color:var(--yellow)">evidência</b> — não com opinião.</p>
+          <p class="lede" data-a style="--d:3;color:rgba(255,255,255,.92);max-width:44ch">Do piloto em diante, a Panco negocia espaço com <b style="color:var(--yellow)">evidência</b>, não com opinião.</p>
           <div data-a style="--d:4;display:flex;gap:11px;margin-top:26px;flex-wrap:wrap">
             <a class="btn wht" href="mailto:marketing@75lab.com.br?subject=Panco%20%C2%B7%20Desenho%20do%20piloto%20de%20PDV&amp;body=Vamos%20fechar%20o%20desenho%20do%20piloto%20a%20partir%20do%20Trade%20Visit%20j%C3%A1%20realizado.">Definir o desenho do piloto <svg><use href="#i-mail"/></svg></a>
             <button class="btn ghow" data-go="5">Rever as 3 frentes</button>
@@ -1055,25 +1042,25 @@ terr(0);
 /* ---------------- Tela 06 · as 3 frentes ---------------- */
 var FRENTES=[
  {obj:"Organizar indulgência e transformar variedade em impulso.",
-  bul:[["i-bolt","<b>Lanche rápido</b> — bolinhos e packs individuais perto do fluxo e do checkout"],
-       ["i-heart","<b>Indulgência</b> — recheados e cobertos com comunicação sensorial e apelo de desejo"],
-       ["i-box","<b>Abastecimento</b> — wafer e biscoitos por ocasião familiar, com blocagem e preço visível"]],
+  bul:[["i-bolt","<b>Lanche rápido:</b> bolinhos e packs individuais perto do fluxo e do checkout"],
+       ["i-heart","<b>Indulgência:</b> recheados e cobertos com comunicação sensorial e apelo de desejo"],
+       ["i-box","<b>Abastecimento:</b> wafer e biscoitos por ocasião familiar, com blocagem e preço visível"]],
   chips:["Gôndola principal","Ponta e ilha promocional","Checkout e fluxo","Cross com café e leite"],
   rule:"Quanto maior o impulso, mais perto do fluxo e mais simples a mensagem.",
   gal:[["display-balcao-infantil","Display de balcão"],["cubo-sobremesas","Cubo de categoria"],
        ["torre-cubos-infantil","Torre de cubos"],["display-chao-infantil","Display de chão"]]},
  {obj:"Entrar como categoria: impacto, educação de uso e permissão de compra.",
-  bul:[["i-bolt","<b>Entrar</b> — glorifier que avança sobre a prateleira e rompe a homogeneidade"],
-       ["i-help","<b>Explicar</b> — uso e ocasião de forma simples, sem revelar a estratégia confidencial"],
-       ["i-tag","<b>Converter</b> — preço e oferta reduzem a barreira do primeiro teste"]],
+  bul:[["i-bolt","<b>Entrar:</b> glorifier que avança sobre a prateleira e rompe a homogeneidade"],
+       ["i-help","<b>Explicar:</b> uso e ocasião de forma simples, sem revelar a estratégia confidencial"],
+       ["i-tag","<b>Converter:</b> preço e oferta reduzem a barreira do primeiro teste"]],
   chips:["Glorifier de gôndola","Cubo de lançamento","Ponta compacta","Cross com bebidas e molhos"],
-  rule:"O enxoval básico informa. A plataforma “Novo Panco” dá permissão — e serve para os próximos lançamentos.",
+  rule:"O enxoval básico informa. A plataforma “Novo Panco” dá permissão e serve para os próximos lançamentos.",
   gal:[["display-balcao-adulto","Glorifier de balcão"],["stopper","Stopper de categoria"],
        ["tag-oferta","Tag de oferta"],["display-recortado","Recorte de lançamento"]]},
  {obj:"Tratar a grande exposição como mídia física permanente: chama, organiza, educa e abastece.",
-  bul:[["i-wheat","<b>Padaria de verdade</b> — madeira, vime, trigo e textura de pão"],
-       ["i-layers","<b>Portfólio navegável</b> — organizado por linha e momento de consumo"],
-       ["i-cycle","<b>Feita para operar</b> — pallet-in, gavetas ocultas, prateleiras ajustáveis, rodízios e bumper"]],
+  bul:[["i-wheat","<b>Padaria de verdade:</b> madeira, vime, trigo e textura de pão"],
+       ["i-layers","<b>Portfólio navegável:</b> organizado por linha e momento de consumo"],
+       ["i-cycle","<b>Feita para operar:</b> pallet-in, gavetas ocultas, prateleiras ajustáveis, rodízios e bumper"]],
   chips:["Visibilidade 360°","Comunicação intercambiável","Alto fluxo","Reposição rápida"],
   rule:"A ilha não é um pallet bonito. É uma plataforma de categoria.",
   gal:[["ilha-frontal","Estação Panco · frontal"],["ilha-lateral","Vista lateral 360°"],
