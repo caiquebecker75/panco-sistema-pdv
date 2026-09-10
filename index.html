@@ -389,6 +389,12 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 .s7 .lv.sel .lb{color:var(--red)}
 /* 08 piloto */
 .s8 .tl{display:flex;gap:8px}
+.s8 .fstep.done{background:var(--red);border-color:var(--red)}
+.s8 .fstep.done b{color:var(--yellow)}
+.s8 .fstep.done span{color:#fff}
+.s8 .fstep.done i{color:rgba(255,255,255,.82)}
+.s8 .fstep.done svg{stroke:var(--yellow)}
+.s8 .fstep.done:hover{background:var(--red);border-color:var(--red);transform:none}
 .s8 .wrap{display:grid;grid-template-columns:1fr 500px;gap:36px;align-items:start;margin-top:24px}
 .s8 .quote{background:var(--red);color:#fff;border-radius:22px;padding:26px 28px;display:flex;flex-direction:column;gap:12px}
 .s8 .quote p{font-size:20px;font-weight:900;line-height:1.26;letter-spacing:-.022em}
@@ -426,6 +432,12 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 .s10 .st svg{width:19px;height:19px;stroke:var(--red);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
 .s10 .st:hover{background:var(--red);border-color:var(--red);color:#fff;transform:translateY(-3px)}
 .s10 .st:hover svg{stroke:var(--yellow)}
+.s10 .st.done{cursor:default;padding-right:18px}
+.s10 .st.done svg{stroke:var(--red)}
+.s10 .st.done i{font-style:normal;font-size:10.5px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--red);border-left:1.5px solid var(--line2);padding-left:12px;margin-left:3px}
+.s10 .st.done:hover{background:#fff;border-color:var(--ink);color:var(--ink);transform:none}
+.s10 .st.done:hover svg{stroke:var(--red)}
 .s10 .ar{color:var(--red)}
 .s10 .ask{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:auto}
 .s10 .as{background:rgba(255,255,255,.14);border:1.5px solid rgba(255,255,255,.3);border-radius:14px;padding:13px 15px;
@@ -530,7 +542,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
       </div>
       <div data-a style="--d:4;display:flex;gap:12px;margin-top:6px">
         <button class="btn pri" data-go="1">Começar a apresentação <svg><use href="#i-arrow"/></svg></button>
-        <button class="btn gho" data-go="8">Ver o investimento</button>
+        <button class="btn gho" data-go="8">Ver o dimensionamento</button>
       </div>
     </div>
   </section>
@@ -711,39 +723,39 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
       <div class="lvl" id="lvlBox">
         <button class="lv sel" data-l="1" data-a style="--d:2">
           <span class="lb">Nível 01 · Essencial</span>
-          <span class="pr">R$ 5–9 mil</span>
-          <p style="font-size:12.5px">Leitura de categoria e preço em qualquer loja. 5 peças, por 10 lojas.</p>
+          <span class="pr">5 peças</span>
+          <p style="font-size:12.5px">Leitura de categoria e preço em qualquer loja, com o mínimo de operação.</p>
         </button>
         <button class="lv" data-l="2" data-a style="--d:3">
           <span class="lb">Nível 02 · Intermediário</span>
-          <span class="pr">R$ 18–35 mil</span>
-          <p style="font-size:12.5px">Ganha destaque, volume e conversão fora da gôndola. 10 peças, por 10 lojas.</p>
+          <span class="pr">10 peças</span>
+          <p style="font-size:12.5px">Ganha destaque, volume e conversão fora da gôndola.</p>
         </button>
         <button class="lv" data-l="3" data-a style="--d:4">
           <span class="lb">Nível 03 · Completo</span>
-          <span class="pr">R$ 55–110 mil</span>
-          <p style="font-size:12.5px">Sistema completo, com grandes exposições e kit de lançamento. 14 peças, por 10 lojas.</p>
+          <span class="pr">14 peças</span>
+          <p style="font-size:12.5px">Sistema completo, com grandes exposições e kit de lançamento.</p>
         </button>
       </div>
       <div class="pieces" id="pieces" style="margin-top:22px"></div>
-      <p class="note" data-a style="--d:8;margin-top:20px">Referência unitária: wobbler e tag R$ 8–35 · régua e faixa R$ 25–250 · stopper R$ 40–140 · cubo R$ 120–450 · display de balcão R$ 90–350 · display de chão R$ 650–1.800 · torre de cubos R$ 450–1.400 · pallet wrap R$ 250–900 · ilha 1P/2P R$ 8–22 mil. Faixas preliminares, sem criação, impostos, frete e instalação.</p>
+      <p class="note" data-a style="--d:8;margin-top:20px">O mesmo repertório atende as 3 frentes, trocando só o KV. Cada peça é cotada por medida, material, acabamento e tiragem — a memória de cálculo vai em proposta comercial separada.</p>
     </div>
   </section>
 
   <!-- ============ 08 · O PILOTO ============ -->
   <section class="slide s8" data-part="Parte 03 · Piloto e rollout" data-chrome="ink">
     <div class="hd">
-      <div class="eyebrow" data-a>Como começar</div>
+      <div class="eyebrow" data-a>Do diagnóstico ao piloto</div>
       <h2 data-a style="--d:1">O piloto é o <em>laboratório</em> do rollout.</h2>
     </div>
     <div class="body">
       <div class="tl">
-        <div class="fstep" data-a style="--d:2"><svg><use href="#i-pin"/></svg><b>Semana 1–2</b><span>Trade Visit</span><i>diagnóstico em loja</i></div>
-        <div class="fstep" data-a style="--d:3"><svg><use href="#i-layers"/></svg><b>Semana 3–4</b><span>Conceito</span><i>seleção de MPDV</i></div>
-        <div class="fstep" data-a style="--d:4"><svg><use href="#i-cube"/></svg><b>Semana 5–7</b><span>Protótipo</span><i>produção piloto</i></div>
-        <div class="fstep" data-a style="--d:5"><svg><use href="#i-store"/></svg><b>Semana 8–11</b><span>Piloto em loja</span><i>execução e ajustes</i></div>
-        <div class="fstep" data-a style="--d:6"><svg><use href="#i-chart"/></svg><b>Semana 12</b><span>Leitura</span><i>dados e aprendizados</i></div>
-        <div class="fstep" data-a style="--d:7"><svg><use href="#i-route"/></svg><b>Semana 13+</b><span>Rollout</span><i>escala por ondas</i></div>
+        <div class="fstep done" data-a style="--d:2"><svg><use href="#i-check"/></svg><b>Concluído</b><span>Trade Visit</span><i>diagnóstico em loja já feito</i></div>
+        <div class="fstep" data-a style="--d:3"><svg><use href="#i-layers"/></svg><b>Semana 1–2</b><span>Conceito</span><i>seleção de MPDV</i></div>
+        <div class="fstep" data-a style="--d:4"><svg><use href="#i-cube"/></svg><b>Semana 3–5</b><span>Protótipo</span><i>produção piloto</i></div>
+        <div class="fstep" data-a style="--d:5"><svg><use href="#i-store"/></svg><b>Semana 6–9</b><span>Piloto em loja</span><i>execução e ajustes</i></div>
+        <div class="fstep" data-a style="--d:6"><svg><use href="#i-chart"/></svg><b>Semana 10</b><span>Leitura</span><i>dados e aprendizados</i></div>
+        <div class="fstep" data-a style="--d:7"><svg><use href="#i-route"/></svg><b>Semana 11+</b><span>Rollout</span><i>escala por ondas</i></div>
       </div>
       <div class="wrap">
         <div>
@@ -777,16 +789,16 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
             </div>
             <p>Fotos padronizadas em D0, D7, D14, D21 e D28 transformam execução em evidência comercial — para negociar espaço, ajustar investimento e escalar com segurança.</p>
           </div>
-          <button class="btn pri" data-go="8" data-a style="--d:10;align-self:flex-start">Ver o investimento <svg><use href="#i-arrow"/></svg></button>
+          <button class="btn pri" data-go="8" data-a style="--d:10;align-self:flex-start">Ver o dimensionamento <svg><use href="#i-arrow"/></svg></button>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ 09 · INVESTIMENTO ============ -->
-  <section class="slide s9" data-part="Parte 04 · Investimento" data-chrome="ink">
+  <section class="slide s9" data-part="Parte 04 · Dimensionamento" data-chrome="ink">
     <div class="hd">
-      <div class="eyebrow" data-a>O investimento</div>
+      <div class="eyebrow" data-a>O dimensionamento</div>
       <h2 data-a style="--d:1">Escolha o tamanho do <em>primeiro passo</em>.</h2>
     </div>
     <div class="body">
@@ -806,28 +818,25 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
             <div class="sc3">
               <div><div class="sc-n" id="scA"></div><div class="sc-l">lojas atendidas</div></div>
               <div><div class="sc-n" id="scB"></div><div class="sc-l">peças produzidas</div></div>
-              <div><div class="sc-n" id="scC"></div><div class="sc-l">produção + implantação</div></div>
+              <div><div class="sc-n" id="scC"></div><div class="sc-l">janela de execução</div></div>
             </div>
           </div>
-          <p class="note" data-a style="--d:4">Valores preliminares para planejamento. Não incluem impostos, frete final detalhado, equipe de campo contínua ou mídia comprada. Orçamento fechado após definição de SKUs, medidas, materiais e restrições de cada rede.</p>
+          <p class="note" data-a style="--d:4">Dimensionamento preliminar para planejamento. Volumes e escopo fecham após a definição de SKUs, medidas reais das embalagens, materiais e restrições de cada rede — e o investimento é apresentado em proposta comercial separada.</p>
         </div>
         <div>
-          <div class="kicker" data-a style="--d:3;margin-bottom:12px">Pacotes de contratação</div>
+          <div class="kicker" data-a style="--d:3;margin-bottom:12px">Pacotes de contratação · orçamento por escopo</div>
           <div class="pk">
             <div class="pkc" data-a style="--d:4">
               <span class="pn">1</span>
               <span><h3>Estratégia + Guia</h3><p>Diagnóstico, arquitetura, menu de MPDV, KV e guia de implantação.</p></span>
-              <span class="pv">R$ 80–140 mil</span>
             </div>
             <div class="pkc" data-a style="--d:5">
               <span class="pn">2</span>
               <span><h3>Piloto completo</h3><p>Pacote 1 + protótipos, produção piloto, instalação e leitura de dados.</p></span>
-              <span class="pv">R$ 250–610 mil</span>
             </div>
             <div class="pkc" data-a style="--d:6">
               <span class="pn">3</span>
               <span><h3>Rollout assistido</h3><p>Pacote 2 + produção seriada, logística e gestão de fornecedores.</p></span>
-              <span class="pv">sob orçamento</span>
             </div>
           </div>
           <div class="card red" data-a style="--d:7;margin-top:16px;flex-direction:row;align-items:center;gap:15px;padding:18px 20px">
@@ -848,9 +857,9 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     <img class="piece" src="assets/midia-aerea.webp" alt="Mídia aérea Panco no ponto de venda" data-a style="--d:3">
     <div class="in">
       <div class="eyebrow" data-a>O próximo passo</div>
-      <h1 data-a style="--d:1;font-size:72px;margin-top:14px">Vamos começar <em>pelo campo</em>.</h1>
+      <h1 data-a style="--d:1;font-size:68px;margin-top:14px">Já conhecemos o campo. Agora é <em>piloto</em>.</h1>
       <div class="steps" data-a style="--d:2">
-        <button class="st" data-go="7"><svg><use href="#i-pin"/></svg>Trade Visit</button>
+        <div class="st done"><svg><use href="#i-check"/></svg>Trade Visit<i>feito</i></div>
         <span class="ar"><svg style="width:26px;height:26px;stroke:var(--yellow);fill:none;stroke-width:2.6;stroke-linecap:round" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>
         <button class="st" data-go="7"><svg><use href="#i-store"/></svg>Piloto</button>
         <span class="ar"><svg style="width:26px;height:26px;stroke:var(--yellow);fill:none;stroke-width:2.6;stroke-linecap:round" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>
@@ -858,7 +867,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
       </div>
       <p class="lede" data-a style="--d:3;color:rgba(255,255,255,.9);max-width:56ch">Do piloto em diante, a Panco negocia espaço com <b style="color:var(--yellow)">evidência</b> — não com opinião.</p>
       <div data-a style="--d:4;display:flex;gap:12px;margin-top:24px;flex-wrap:wrap">
-        <a class="btn wht" href="mailto:marketing@75lab.com.br?subject=Panco%20%C2%B7%20Trade%20Visit%20e%20piloto%20de%20PDV&amp;body=Vamos%20agendar%20o%20Trade%20Visit%20e%20definir%20o%20desenho%20do%20piloto.">Agendar o Trade Visit <svg><use href="#i-mail"/></svg></a>
+        <a class="btn wht" href="mailto:marketing@75lab.com.br?subject=Panco%20%C2%B7%20Desenho%20do%20piloto%20de%20PDV&amp;body=Vamos%20fechar%20o%20desenho%20do%20piloto%20a%20partir%20do%20Trade%20Visit%20j%C3%A1%20realizado.">Definir o desenho do piloto <svg><use href="#i-mail"/></svg></a>
         <button class="btn ghow" data-go="5">Rever as 3 frentes</button>
         <button class="btn ghow" id="btnPrint2">Baixar PDF <svg><use href="#i-down"/></svg></button>
       </div>
@@ -936,7 +945,7 @@ addEventListener("resize",fit);fit();
 var slides=$$(".slide"),N=slides.length,i=0,busy=false;
 var TITLES=["A marca mais fácil de encontrar","Três frentes, uma pergunta","A tese: arquitetura de PDV",
   "Por que agora","A arquitetura de leitura","As 3 frentes na prática","Menu modular de MPDV",
-  "O piloto como laboratório","Investimento e pacotes","Próximo passo"];
+  "O piloto como laboratório","Dimensionamento e pacotes","Próximo passo"];
 
 function setChrome(){
   $("#prog").style.width=((i+1)/N*100)+"%";
@@ -1076,10 +1085,10 @@ level(1);
 
 /* ---------------- Tela 09 · cenários ---------------- */
 var SC=[
- {n:"Cenário 01 · Piloto enxuto",d:"Prova de conceito em uma rede, com o essencial do menu.",a:"6",b:"120–180",c:"R$ 120–220 mil"},
- {n:"Cenário 02 · Piloto robusto",d:"Três frentes, três formatos de loja e leitura comparável com lojas controle.",a:"10–12",b:"280–420",c:"R$ 250–470 mil"},
- {n:"Cenário 03 · Rollout regional",d:"Escala por prioridade comercial, já com o playbook do piloto.",a:"50",b:"1.500–2.300",c:"R$ 1,1–2,3 mi"},
- {n:"Cenário 04 · Escala nacional",d:"Programa Panco de presença no PDV, com reposição e atualização contínuas.",a:"150",b:"4.500–7.000",c:"R$ 3,5–7,5 mi"}
+ {n:"Cenário 01 · Piloto enxuto",d:"Prova de conceito em uma rede, com o essencial do menu.",a:"6",b:"120–180",c:"4 semanas"},
+ {n:"Cenário 02 · Piloto robusto",d:"Três frentes, três formatos de loja e leitura comparável com lojas controle.",a:"10–12",b:"280–420",c:"5 semanas"},
+ {n:"Cenário 03 · Rollout regional",d:"Escala por prioridade comercial, já com o playbook do piloto.",a:"50",b:"1.500–2.300",c:"6–10 semanas"},
+ {n:"Cenário 04 · Escala nacional",d:"Programa Panco de presença no PDV, com reposição e atualização contínuas.",a:"150",b:"4.500–7.000",c:"por ondas"}
 ];
 function scen(k){
   var d=SC[k];

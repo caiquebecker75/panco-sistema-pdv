@@ -3,7 +3,11 @@
 Apresentação comercial em HTML (10 telas) da proposta estratégica da 75 LAB para a **Panco**:
 um sistema de presença no ponto de venda que integra as três frentes do briefing —
 **Linha Sobremesas**, **Lançamento Tortillas** e **Ilha Cash & Carry** — em um menu modular
-de MPDV, com piloto, rollout por ondas e cenários de investimento.
+de MPDV, com piloto, rollout por ondas e cenários de dimensionamento.
+
+> **Sem valores.** O deck não exibe preço, orçamento ou faixa de investimento em nenhuma tela —
+> o investimento é apresentado em proposta comercial separada. O único dado em R$ é o tamanho de
+> mercado da tela 04 (fontes públicas ABIMAPI/ABRAS).
 
 **No ar:** https://projetos.75lab.com.br/panco-sistema-pdv/
 
@@ -16,16 +20,16 @@ de MPDV, com piloto, rollout por ondas e cenários de investimento.
 | 04 | Por que agora | dados de mercado (ABIMAPI, ABRAS) |
 | 05 | A arquitetura de leitura | o sistema + territórios visuais |
 | 06 | As 3 frentes na prática | abas interativas com renders |
-| 07 | Menu modular de MPDV | 14 peças, 3 níveis de investimento |
-| 08 | O piloto como laboratório | cronograma, desenho e KPIs |
-| 09 | Investimento e pacotes | 4 cenários + 3 pacotes de contratação |
-| 10 | Próximo passo | Trade Visit → Piloto → Rollout |
+| 07 | Menu modular de MPDV | 14 peças em 3 níveis de ambição |
+| 08 | O piloto como laboratório | cronograma (Trade Visit já concluído), desenho e KPIs |
+| 09 | Dimensionamento e pacotes | 4 cenários de lojas/peças/prazo + 3 pacotes de contratação |
+| 10 | Próximo passo | Trade Visit ✓ → Piloto → Rollout |
 
 ## Como usar
 - Abra `index.html` no navegador (ou sirva a pasta com qualquer servidor estático).
 - **Navegação:** setas ← →, espaço, PageUp/PageDown, `Home`/`End`, `M` abre o índice, swipe no mobile.
 - **Interações:** abas das 3 frentes (tela 06), níveis do menu de MPDV (tela 07),
-  cenários de investimento (tela 09), territórios visuais (tela 05) e lightbox em todos os renders.
+  cenários de dimensionamento (tela 09), territórios visuais (tela 05) e lightbox em todos os renders.
 - **Exportar PDF:** `Cmd+P` — há estilo de impressão, uma tela por página (1600×900).
 - Palco fixo de 1600×900 escalado para qualquer tela.
 
@@ -43,4 +47,5 @@ otimizados em WebP. Os fundos das três vistas da ilha foram recortados para com
 
 ## Fonte da estratégia
 `PANCO_Estrategia_3_Frentes_MPDV_75LAB.pptx` (38 slides) — diagnóstico, arquitetura de leitura,
-menu de MPDV, piloto, rollout, premissas de custo e governança.
+menu de MPDV, piloto, rollout, premissas de custo e governança. As faixas de custo do estudo
+não foram levadas para o deck.
