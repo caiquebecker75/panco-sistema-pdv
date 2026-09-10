@@ -1,6 +1,6 @@
 # Panco · Sistema de presença no PDV — 75 LAB
 
-Apresentação comercial em HTML (13 telas) da proposta estratégica da 75 LAB para a **Panco**:
+Apresentação comercial em HTML (12 telas) da proposta estratégica da 75 LAB para a **Panco**:
 um sistema de presença no ponto de venda que integra a categorização do ponto natural,
 a **Linha Sobremesas** e a **Ilha Cash & Carry** em um menu modular
 de MPDV, com piloto, rollout por ondas e cenários de dimensionamento.
@@ -25,18 +25,17 @@ identificada no Trade Visit.
 | 05 | Jornada do shopper | a escada de leitura + os 4 key visuals |
 | 06 | Trade Visit: cinco travas | o diagnóstico em campo, com o registro fotográfico por trava |
 | 07 | Enxoval de categorização | as 10 peças que separam as 8 categorias no ponto natural |
-| 08 | Antes e depois | três situações da loja, antes e com o sistema aplicado |
-| 09 | As frentes na prática | Linha Sobremesas e Ilha Cash & Carry, lado a lado |
-| 10 | Menu modular de MPDV | 14 peças em 3 níveis de ambição |
-| 11 | O piloto como laboratório | cronograma (Trade Visit já concluído), números e KPIs |
-| 12 | Dimensionamento e pacotes | 4 cenários de lojas/peças/prazo + 3 pacotes de contratação |
-| 13 | Próximo passo | Trade Visit ✓ → Piloto → Rollout |
+| 08 | As frentes na prática | Linha Sobremesas e Ilha Cash & Carry, lado a lado |
+| 09 | Menu modular de MPDV | 14 peças em 3 níveis de ambição |
+| 10 | O piloto como laboratório | cronograma (Trade Visit já concluído), números e KPIs |
+| 11 | Dimensionamento e pacotes | 4 cenários de lojas/peças/prazo + 3 pacotes de contratação |
+| 12 | Próximo passo | Trade Visit ✓ → Piloto → Rollout |
 
 ## Como usar
 - Abra `index.html` no navegador (ou sirva a pasta com qualquer servidor estático).
 - **Navegação:** setas ← →, espaço, PageUp/PageDown, `Home`/`End`, `M` abre o índice, swipe no mobile.
-- **Interações:** travas do Trade Visit (tela 06), antes/depois (tela 08), níveis do menu de MPDV (tela 10),
-  cenários de dimensionamento (tela 09), territórios visuais (tela 05) e lightbox em todos os renders.
+- **Interações:** travas do Trade Visit (tela 06), níveis do menu de MPDV (tela 09),
+  cenários de dimensionamento (tela 11), territórios visuais (tela 05) e lightbox em todos os renders.
 - **Exportar PDF:** `Cmd+P` — há estilo de impressão, uma tela por página (1600×900).
 - Palco fixo de 1600×900 escalado para qualquer tela.
 
@@ -56,11 +55,8 @@ Os renders em `assets/` vêm do estudo `PANCO_Estrategia_3_Frentes_MPDV_75LAB.pp
 otimizados em WebP. Os fundos das três vistas da ilha foram recortados para compor sobre as
 áreas vermelhas. Para trocar qualquer peça, basta substituir o arquivo mantendo o nome.
 
-## Fotos do Trade Visit e antes/depois
-`assets/tv-a1..e3.webp` são 15 fotos da visita (10/09/2026), três por trava da tela 06.
-A tela 08 compara três situações: o *antes* usa `tv-a2`, `tv-a3` e `tv-e1`; o *depois* espera
-`assets/dep-1.webp`, `dep-2.webp` e `dep-3.webp`. Enquanto esses arquivos não existirem, o painel
-mostra um slot pontilhado; basta salvar as artes com esses nomes para elas entrarem automaticamente.
+## Fotos do Trade Visit
+`assets/tv-<a..e><n>.webp` são as fotos da visita de 10/09/2026, duas ou três por trava da tela 06.
 
 ## Fonte da estratégia
 `PANCO_Estrategia_3_Frentes_MPDV_75LAB.pptx` (38 slides) — diagnóstico, arquitetura de leitura,

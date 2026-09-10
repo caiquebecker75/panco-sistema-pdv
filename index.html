@@ -393,28 +393,6 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 .tv .ins.sel svg{stroke:var(--yellow)}
 .tv .ph{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:12px;height:428px}
 .tv .ph .render{height:100%}
-/* 08 antes e depois */
-.ba .body{gap:20px}
-.ba .cmp{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.ba .pane{display:flex;flex-direction:column;gap:12px}
-.ba .box{position:relative;height:396px;border-radius:20px;overflow:hidden;border:1.5px solid var(--line);background:var(--cream)}
-.ba .box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.ba .box .badge{position:absolute;left:12px;top:12px;z-index:3;font-size:10.5px;font-weight:900;letter-spacing:.18em;
-  text-transform:uppercase;padding:6px 13px;border-radius:100px;background:var(--ink);color:#fff}
-.ba .pane.aft .box{border-color:var(--red)}
-.ba .pane.aft .badge{background:var(--red)}
-.ba .box .zi{position:absolute;right:12px;top:12px;z-index:3;width:28px;height:28px;border-radius:50%;
-  background:rgba(255,255,255,.94);display:grid;place-items:center;opacity:0;transition:.3s;box-shadow:0 2px 10px rgba(35,31,32,.14)}
-.ba .box:hover .zi{opacity:1}
-.ba .box .zi svg{width:13px;height:13px;stroke:var(--red);fill:none;stroke-width:2.6;stroke-linecap:round}
-.ba .box .slot{display:none;position:absolute;inset:0;place-items:center;align-content:center;gap:10px;text-align:center;padding:24px;
-  border:2.5px dashed var(--line2);border-radius:19px;background:var(--cream)}
-.ba .box.empty .slot{display:grid}
-.ba .box.empty img{display:none}
-.ba .box .slot b{font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3)}
-.ba .box .slot span{font-size:12.5px;font-weight:600;color:var(--ink3);max-width:32ch;line-height:1.4}
-.ba .cap2{font-size:14px;font-weight:700;line-height:1.4;color:var(--ink2);min-height:40px}
-.ba .cap2 b{color:var(--ink);font-weight:900}
 /* 07 enxoval de categorização */
 .sc .body{gap:22px}
 .sc .cats{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}
@@ -618,7 +596,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
       </div>
       <div data-a style="--d:4;display:flex;gap:12px;margin-top:6px">
         <button class="btn pri" data-go="1">Começar a apresentação <svg><use href="#i-arrow"/></svg></button>
-        <button class="btn gho" data-go="11">Ver o dimensionamento</button>
+        <button class="btn gho" data-go="10">Ver o dimensionamento</button>
       </div>
     </div>
   </section>
@@ -632,12 +610,12 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     </div>
     <div class="body">
       <div class="f3">
-        <button class="frow" data-a style="--d:3" data-go="8">
+        <button class="frow" data-a style="--d:3" data-go="7">
           <span class="fn">01</span>
           <span class="ft"><h3>Linha Sobremesas</h3><p>Wafer, recheados e bolinhos: indulgência que pede missão de compra, blocagem e impulso.</p>
             <span class="fq"><svg><use href="#i-help"/></svg><b>Como organizar indulgência sem virar mais uma embalagem na gôndola?</b></span></span>
         </button>
-        <button class="frow" data-a style="--d:4" data-go="8">
+        <button class="frow" data-a style="--d:4" data-go="7">
           <span class="fn">02</span>
           <span class="ft"><h3>Ilha Cash &amp; Carry</h3><p>Grande exposição de atacarejo: escala e operação, sem abrir mão de design e marca.</p>
             <span class="fq"><svg><use href="#i-help"/></svg><b>Como fazer volume parecer marca, e não apenas estoque?</b></span></span>
@@ -666,7 +644,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
         </ul>
         <div data-a style="--d:4;display:flex;gap:12px;margin-top:6px">
           <button class="btn wht" data-go="3">Por que agora <svg><use href="#i-arrow"/></svg></button>
-          <button class="btn ghow" data-go="8">Ver as frentes</button>
+          <button class="btn ghow" data-go="7">Ver as frentes</button>
         </div>
       </div>
       <div class="dist" data-a style="--d:2">
@@ -842,40 +820,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     </div>
   </section>
 
-  <!-- ============ 08 · ANTES E DEPOIS ============ -->
-  <section class="slide ba warm" data-part="Parte 02 · Antes e depois" data-chrome="ink">
-    <div class="hd">
-      <div class="eyebrow" data-a>A transformação</div>
-      <div style="display:flex;align-items:flex-end;gap:30px;flex-wrap:wrap">
-        <h2 data-a style="--d:1;flex:1">O mesmo espaço, <em>com sistema</em>.</h2>
-        <div class="seg lite" id="baSeg" data-a style="--d:2"></div>
-      </div>
-    </div>
-    <div class="body">
-      <div class="cmp">
-        <div class="pane">
-          <div class="box" id="baA">
-            <img src="" alt="Situação encontrada no Trade Visit">
-            <span class="badge">Antes</span>
-            <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
-            <span class="slot"><b>Foto do antes</b></span>
-          </div>
-          <p class="cap2" id="baCapA"></p>
-        </div>
-        <div class="pane aft">
-          <div class="box" id="baB">
-            <img src="" alt="Proposta da 75 LAB para o mesmo espaço">
-            <span class="badge">Depois</span>
-            <span class="zi"><svg viewBox="0 0 24 24"><use href="#i-zoom"/></svg></span>
-            <span class="slot"><b>Espaço do render</b><span>Salve a arte do depois em assets/ com este nome para ela entrar aqui.</span></span>
-          </div>
-          <p class="cap2" id="baCapB"></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 09 · AS FRENTES ============ -->
+  <!-- ============ 08 · AS FRENTES ============ -->
   <section class="slide s6" data-part="Parte 02 · As frentes" data-chrome="ink">
     <div class="hd">
       <div class="eyebrow" data-a>O plano integrado</div>
@@ -934,7 +879,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     </div>
   </section>
 
-  <!-- ============ 10 · MENU DE MPDV ============ -->
+  <!-- ============ 09 · MENU DE MPDV ============ -->
   <section class="slide s7 warm" data-part="Parte 02 · Menu de MPDV" data-chrome="ink">
     <div class="hd">
       <div class="eyebrow" data-a>O repertório</div>
@@ -966,7 +911,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     </div>
   </section>
 
-  <!-- ============ 11 · O PILOTO ============ -->
+  <!-- ============ 10 · O PILOTO ============ -->
   <section class="slide s8" data-part="Parte 03 · Piloto e rollout" data-chrome="ink">
     <div class="hd">
       <div class="eyebrow" data-a>Do diagnóstico ao piloto</div>
@@ -1002,12 +947,12 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
       <div class="qband" data-a style="--d:11">
         <svg class="q" viewBox="0 0 24 24"><use href="#i-help"/></svg>
         <p>A pergunta do piloto não é “a peça ficou bonita?”. É “qual configuração vende mais, opera melhor e convence o varejo?”.</p>
-        <button class="btn wht" data-go="11">Ver o dimensionamento <svg><use href="#i-arrow"/></svg></button>
+        <button class="btn wht" data-go="10">Ver o dimensionamento <svg><use href="#i-arrow"/></svg></button>
       </div>
     </div>
   </section>
 
-  <!-- ============ 12 · DIMENSIONAMENTO ============ -->
+  <!-- ============ 11 · DIMENSIONAMENTO ============ -->
   <section class="slide s9" data-part="Parte 04 · Dimensionamento" data-chrome="ink">
     <div class="hd">
       <div class="eyebrow" data-a>O dimensionamento</div>
@@ -1060,7 +1005,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
     </div>
   </section>
 
-  <!-- ============ 13 · PRÓXIMO PASSO ============ -->
+  <!-- ============ 12 · PRÓXIMO PASSO ============ -->
   <section class="slide s10 dark" data-part="Fechamento" data-chrome="red">
     <div class="cv"><i></i><i></i><i></i></div>
     <div class="dots" style="right:56px;top:132px;grid-template-columns:repeat(3,1fr)">
@@ -1074,14 +1019,14 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
           <div class="steps" data-a style="--d:2">
             <div class="st done"><svg><use href="#i-check"/></svg>Trade Visit<i>feito</i></div>
             <span class="ar"><svg style="width:24px;height:24px;stroke:var(--yellow);fill:none;stroke-width:2.6;stroke-linecap:round" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>
-            <button class="st" data-go="10"><svg><use href="#i-store"/></svg>Piloto</button>
+            <button class="st" data-go="9"><svg><use href="#i-store"/></svg>Piloto</button>
             <span class="ar"><svg style="width:24px;height:24px;stroke:var(--yellow);fill:none;stroke-width:2.6;stroke-linecap:round" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>
-            <button class="st" data-go="11"><svg><use href="#i-route"/></svg>Rollout</button>
+            <button class="st" data-go="10"><svg><use href="#i-route"/></svg>Rollout</button>
           </div>
           <p class="lede" data-a style="--d:3;color:rgba(255,255,255,.92);max-width:44ch">Do piloto em diante, a Panco negocia espaço com <b style="color:var(--yellow)">evidência</b>, não com opinião.</p>
           <div data-a style="--d:4;display:flex;gap:11px;margin-top:26px;flex-wrap:wrap">
             <a class="btn wht" href="mailto:marketing@75lab.com.br?subject=Panco%20%C2%B7%20Desenho%20do%20piloto%20de%20PDV&amp;body=Vamos%20fechar%20o%20desenho%20do%20piloto%20a%20partir%20do%20Trade%20Visit%20j%C3%A1%20realizado.">Definir o desenho do piloto <svg><use href="#i-mail"/></svg></a>
-            <button class="btn ghow" data-go="8">Rever as frentes</button>
+            <button class="btn ghow" data-go="7">Rever as frentes</button>
             <button class="btn ghow" id="btnPrint2">Baixar PDF <svg><use href="#i-down"/></svg></button>
           </div>
         </div>
@@ -1123,7 +1068,7 @@ h1 em,h2 em{font-style:normal;color:var(--red)}
 
 <div id="lb">
   <button class="chip lbx" id="lbClose">Fechar &times;</button>
-  <img id="lbImg" src="" alt="">
+  <img id="lbImg" alt="">
   <div class="lbcap" id="lbCap"></div>
 </div>
 
@@ -1160,7 +1105,7 @@ addEventListener("resize",fit);fit();
 
 var slides=$$(".slide"),N=slides.length,i=0,busy=false;
 var TITLES=["A marca mais fácil de encontrar","Duas frentes, a mesma raiz","A tese: arquitetura de PDV",
-  "Por que agora","Jornada do shopper","Trade Visit: cinco travas","Enxoval de categorização","Antes e depois","As frentes na prática","Menu modular de MPDV",
+  "Por que agora","Jornada do shopper","Trade Visit: cinco travas","Enxoval de categorização","As frentes na prática","Menu modular de MPDV",
   "O piloto como laboratório","Dimensionamento e pacotes","Próximo passo"];
 
 function setChrome(){
@@ -1270,39 +1215,7 @@ $("#tvList").addEventListener("click",function(e){
 });
 trava(0);
 
-/* ---------------- Tela 08 · antes e depois ---------------- */
-var PAIRS=[
- {n:"Gôndola de pães",
-  a:["assets/tv-a2.webp","<b>Antes:</b> corredor uniforme, sem marca e sem separação de categoria."],
-  d:["assets/dep-1.webp","<b>Depois:</b> testeira, régua e laterais dão nome à categoria e fazem a Panco ser vista de longe."]},
- {n:"Grande exposição",
-  a:["assets/tv-a3.webp","<b>Antes:</b> volume empilhado sem identidade. Parece estoque, não marca."],
-  d:["assets/dep-3.webp","<b>Depois:</b> display modular com testeira, réguas e comunicação. O volume passa a vender marca."]},
- {n:"Material no ponto natural",
-  a:["assets/tv-e1.webp","<b>Antes:</b> o material que existe não cabe na gôndola e termina no fim do corredor."],
-  d:["assets/dep-2.webp","<b>Depois:</b> peça no formato do ponto natural, aplicada na própria gôndola de pães."]}
-];
-function pair(k){
-  var d=PAIRS[k];
-  $$("#baSeg button").forEach(function(b,n){b.classList.toggle("sel",n===k)});
-  [["#baA","#baCapA",d.a],["#baB","#baCapB",d.d]].forEach(function(x){
-    var box=$(x[0]),im=$("img",box);
-    box.classList.remove("empty");
-    im.onerror=function(){box.classList.add("empty")};
-    im.src=x[2][0];
-    box.setAttribute("data-img",x[2][0]);
-    box.setAttribute("data-cap",d.n);
-    $(x[1]).innerHTML=x[2][1];
-  });
-}
-$("#baSeg").innerHTML=PAIRS.map(function(d,k){
-  return '<button data-p="'+k+'">'+d.n+'</button>'}).join("");
-$("#baSeg").addEventListener("click",function(e){
-  var b=e.target.closest("button[data-p]");if(b)pair(+b.dataset.p);
-});
-pair(0);
-
-/* ---------------- Tela 10 · menu de MPDV ---------------- */
+/* ---------------- Tela 09 · menu de MPDV ---------------- */
 var PIECES=[
  ["testeira","Testeira",1],["regua","Régua de gôndola",1],["wobbler","Wobbler",1],
  ["tag-oferta","Tag de preço",1],["display-recortado","Cartaz recorte",1],
